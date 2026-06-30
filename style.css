@@ -301,6 +301,15 @@ footer {
     opacity: 1;
     transform: translateY(0);
 }
+.scale-in {
+    opacity: 0;
+    transform: scale(0.9);
+    transition: opacity 0.8s ease, transform 0.8s ease;
+}
+.scale-in.appear {
+    opacity: 1;
+    transform: scale(1);
+}
 /* Hamburger Menu Styles */
 .hamburger {
     display: none;

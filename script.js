@@ -13,9 +13,18 @@ document.addEventListener("DOMContentLoaded", () => {
             }
         });
     }, observerOptions);
-    const elementsToAnimate = document.querySelectorAll('.fade-in');
+    const elementsToAnimate = document.querySelectorAll('.fade-in, .scale-in');
     elementsToAnimate.forEach(el => {
         observer.observe(el);
+    });
+
+    // Parallax Scrolling Effect for Hero Shapes
+    const heroShapes = document.querySelector('.hero-shapes');
+    window.addEventListener('scroll', () => {
+        let scrollY = window.scrollY;
+        if (heroShapes) {
+            heroShapes.style.transform = `translateY(${scrollY * 0.4}px)`;
+        }
     });
 
     // Theme Toggle Logic
