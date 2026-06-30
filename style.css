@@ -211,6 +211,8 @@ body {
 .project-image {
     height: 200px;
     width: 100%;
+    background-size: cover !important;
+    background-position: center !important;
 }
 .project-info {
     padding: 2rem;
