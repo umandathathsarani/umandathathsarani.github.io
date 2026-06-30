@@ -25,6 +25,7 @@
         <ul class="nav-links">
             <li><a href="#home">Home</a></li>
             <li><a href="#about">About</a></li>
+            <li><a href="#education">Education</a></li>
             <li><a href="#projects">Projects</a></li>
             <li><a href="#contact">Contact</a></li>
         </ul>
@@ -39,14 +40,42 @@
 
     <main>
         <section id="home" class="hero">
-            <div class="hero-content fade-in">
-                <h1>Hi, I'm <span class="gradient-text">Umanda Thathsarani</span></h1>
-                <p class="subtitle">I build interactive, responsive, and beautiful digital experiences.</p>
+            <div class="hero-content-left fade-in">
+                <h1>Hi, I am <span class="gradient-text">Umanda Thathsarani</span></h1>
+                <div class="typing-container" style="margin-bottom: 2rem;">
+                    <span class="subtitle" style="margin-bottom: 0;">I am a </span><span id="typed-text" class="gradient-text-alt" style="font-size: 1.5rem; font-weight: 600;"></span>
+                </div>
+                
+                <ul class="traits-list fade-in slide-in-bottom">
+                    <li><span class="trait-icon">✓</span> Full Stack Developer</li>
+                    <li><span class="trait-icon">✓</span> AI Enthusiast</li>
+                    <li><span class="trait-icon">✓</span> Research Enthusiast</li>
+                    <li><span class="trait-icon">✓</span> Open Source Learner</li>
+                    <li><span class="trait-icon">✓</span> Problem Solver</li>
+                </ul>
+
+                <div class="hero-stats fade-in">
+                    <div class="stat-item"><span class="stat-number" data-target="25">0</span>+<br><span class="stat-label">Projects</span></div>
+                    <div class="stat-item"><span class="stat-number" data-target="40">0</span>+<br><span class="stat-label">Repositories</span></div>
+                    <div class="stat-item"><span class="stat-number" data-target="15">0</span>+<br><span class="stat-label">Technologies</span></div>
+                    <div class="stat-item"><span class="stat-number" data-target="5">0</span>+<br><span class="stat-label">Research Areas</span></div>
+                </div>
+
                 <div class="hero-buttons">
-                    <a href="#projects" class="btn primary-btn">View My Work</a>
-                    <a href="#contact" class="btn secondary-btn">Get In Touch</a>
+                    <div class="magnetic-btn"><a href="#projects" class="btn primary-btn glow-border">View My Work</a></div>
+                    <div class="magnetic-btn"><a href="#contact" class="btn secondary-btn">Get In Touch</a></div>
                 </div>
             </div>
+
+            <div class="hero-content-right fade-in" style="transition-delay: 0.3s;">
+                <div class="hero-illustration" data-tilt data-tilt-max="10" data-tilt-speed="400" data-tilt-glare="true" data-tilt-max-glare="0.2">
+                    <img src="assets/hero-workspace.png" alt="Developer Workspace" class="glass-panel" style="width: 100%; max-width: 500px; border-radius: 20px;">
+                    <div class="floating-icon icon-1"><i class="devicon-react-original colored"></i></div>
+                    <div class="floating-icon icon-2"><i class="devicon-python-plain colored"></i></div>
+                    <div class="floating-icon icon-3"><i class="devicon-tensorflow-original colored"></i></div>
+                </div>
+            </div>
+
             <div class="hero-shapes">
                 <div class="shape shape-1"></div>
                 <div class="shape shape-2"></div>
@@ -55,23 +84,164 @@
 
         <section id="about" class="about section-padding">
             <h2 class="section-title fade-in">About <span class="gradient-text">Me</span></h2>
-            <div class="about-content fade-in slide-in-bottom">
-                <p>Hello! I am <strong>Umanda Thathsarani</strong>, a passionate <span class="highlight">AI Engineer and ML Researcher</span> based in Sri Lanka.</p>
-                <p>I specialize in building intelligent, scalable machine learning systems and deploying them via responsive web and mobile applications.</p>
-                <p>Bachelor of Science Honours in Information Technology<br><br><span style="color: var(--accent-1); font-weight: 600;">Specialized in Artificial Intelligence</span></p>
+            
+            <div class="about-grid">
+                <div class="about-left fade-in">
+                    <div class="tech-orbit-container">
+                        <div class="tech-orbit">
+                            <div class="orbit-center"><i class="devicon-python-plain"></i></div>
+                            <div class="orbit-ring">
+                                <div class="orbit-item" style="--i:1;"><i class="devicon-pytorch-original"></i></div>
+                                <div class="orbit-item" style="--i:2;"><i class="devicon-tensorflow-original"></i></div>
+                                <div class="orbit-item" style="--i:3;"><i class="devicon-react-original"></i></div>
+                                <div class="orbit-item" style="--i:4;"><i class="devicon-docker-plain"></i></div>
+                                <div class="orbit-item" style="--i:5;"><i class="devicon-amazonwebservices-original"></i></div>
+                                <div class="orbit-item" style="--i:6;"><i class="devicon-javascript-plain"></i></div>
+                                <div class="orbit-item" style="--i:7;"><i class="devicon-fastapi-plain"></i></div>
+                                <div class="orbit-item" style="--i:8;"><i class="devicon-git-plain"></i></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
                 
-                <div class="tech-orbit-container">
-                    <div class="tech-orbit">
-                        <div class="orbit-center"><i class="devicon-python-plain"></i></div>
-                        <div class="orbit-ring">
-                            <div class="orbit-item" style="--i:1;"><i class="devicon-pytorch-original"></i></div>
-                            <div class="orbit-item" style="--i:2;"><i class="devicon-tensorflow-original"></i></div>
-                            <div class="orbit-item" style="--i:3;"><i class="devicon-react-original"></i></div>
-                            <div class="orbit-item" style="--i:4;"><i class="devicon-docker-plain"></i></div>
-                            <div class="orbit-item" style="--i:5;"><i class="devicon-amazonwebservices-original"></i></div>
-                            <div class="orbit-item" style="--i:6;"><i class="devicon-javascript-plain"></i></div>
-                            <div class="orbit-item" style="--i:7;"><i class="devicon-fastapi-plain"></i></div>
-                            <div class="orbit-item" style="--i:8;"><i class="devicon-git-plain"></i></div>
+                <div class="about-right fade-in" style="transition-delay: 0.2s;">
+                    <div class="glass-panel" style="padding: 2.5rem;">
+                        <p style="font-size: 1.15rem; margin-bottom: 1.5rem; color: var(--text-secondary); line-height: 1.8;">Hello! I am <strong style="color: var(--text-primary);">Umanda Thathsarani</strong>, a passionate <span class="gradient-text">AI Engineer and ML Researcher</span> based in Sri Lanka.</p>
+                        <p style="font-size: 1.15rem; margin-bottom: 1.5rem; color: var(--text-secondary); line-height: 1.8;">I specialize in building intelligent, scalable machine learning systems and deploying them via responsive web and mobile applications.</p>
+                        <p style="font-size: 1.15rem; color: var(--text-secondary); line-height: 1.8;">Bachelor of Science Honours in Information Technology<br><span class="gradient-text-alt" style="font-weight: 600;">Specialized in Artificial Intelligence</span></p>
+                    </div>
+                    
+                    <div class="current-focus glass-panel fade-in" style="margin-top: 2rem; padding: 2rem;">
+                        <h3 style="margin-bottom: 1.5rem; color: var(--text-primary);">Currently Working On</h3>
+                        <ul class="focus-list">
+                            <li><i class="devicon-react-original colored"></i> Portfolio Development</li>
+                            <li><i class="devicon-python-plain colored"></i> AI & ML Projects</li>
+                            <li><i class="devicon-jupyter-plain colored"></i> Research</li>
+                            <li><i class="devicon-git-plain colored"></i> Open Source Contributions</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tech Journey Timeline -->
+            <div class="timeline-container fade-in" style="margin-top: 8rem;">
+                <h3 class="section-subtitle" style="text-align: center; margin-bottom: 4rem; font-size: 2.5rem;">My <span class="gradient-text">Tech Journey</span></h3>
+                <div class="timeline">
+                    <div class="timeline-item left fade-in">
+                        <div class="timeline-content glass-panel glow-border" data-tilt data-tilt-max="5" data-tilt-speed="400" data-tilt-glare="true" data-tilt-max-glare="0.1">
+                            <div class="timeline-year gradient-text">2024</div>
+                            <h4>Started BSc (Hons) in IT</h4>
+                            <p>Began my academic journey specializing in Artificial Intelligence at SLIIT.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item right fade-in">
+                        <div class="timeline-content glass-panel glow-border" data-tilt data-tilt-max="5" data-tilt-speed="400" data-tilt-glare="true" data-tilt-max-glare="0.1">
+                            <div class="timeline-year gradient-text">2025</div>
+                            <h4>Built Strong Foundations</h4>
+                            <p>Mastered core programming concepts and completed complex academic software projects.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item left fade-in">
+                        <div class="timeline-content glass-panel glow-border" data-tilt data-tilt-max="5" data-tilt-speed="400" data-tilt-glare="true" data-tilt-max-glare="0.1">
+                            <div class="timeline-year gradient-text">2026</div>
+                            <h4>Independent Development & Research</h4>
+                            <p>Began building real-world open-source projects, diving deep into Machine Learning and Agentic AI research.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="interests" class="interests section-padding">
+            <h2 class="section-title fade-in">Areas of <span class="gradient-text">Interest</span></h2>
+            <div class="interest-grid fade-in">
+                <div class="glass-panel glow-border interest-card" data-tilt data-tilt-max="10" data-tilt-speed="400" data-tilt-glare="true" data-tilt-max-glare="0.2">
+                    <i class="devicon-javascript-plain colored"></i>
+                    <h3>Full Stack</h3>
+                    <p>Building responsive, scalable web applications.</p>
+                </div>
+                <div class="glass-panel glow-border interest-card" data-tilt data-tilt-max="10" data-tilt-speed="400" data-tilt-glare="true" data-tilt-max-glare="0.2">
+                    <i class="devicon-python-plain colored"></i>
+                    <h3>AI</h3>
+                    <p>Developing intelligent algorithms and models.</p>
+                </div>
+                <div class="glass-panel glow-border interest-card" data-tilt data-tilt-max="10" data-tilt-speed="400" data-tilt-glare="true" data-tilt-max-glare="0.2">
+                    <i class="devicon-tensorflow-original colored"></i>
+                    <h3>Machine Learning</h3>
+                    <p>Training predictive neural networks.</p>
+                </div>
+                <div class="glass-panel glow-border interest-card" data-tilt data-tilt-max="10" data-tilt-speed="400" data-tilt-glare="true" data-tilt-max-glare="0.2">
+                    <i class="devicon-jupyter-plain colored"></i>
+                    <h3>Research</h3>
+                    <p>Exploring novel architectures.</p>
+                </div>
+                <div class="glass-panel glow-border interest-card" data-tilt data-tilt-max="10" data-tilt-speed="400" data-tilt-glare="true" data-tilt-max-glare="0.2">
+                    <i class="devicon-nodejs-plain colored"></i>
+                    <h3>Backend Systems</h3>
+                    <p>Designing robust APIs and microservices.</p>
+                </div>
+                <div class="glass-panel glow-border interest-card" data-tilt data-tilt-max="10" data-tilt-speed="400" data-tilt-glare="true" data-tilt-max-glare="0.2">
+                    <i class="devicon-amazonwebservices-original colored"></i>
+                    <h3>Cloud Computing</h3>
+                    <p>Deploying on modern cloud infrastructure.</p>
+                </div>
+                <div class="glass-panel glow-border interest-card" data-tilt data-tilt-max="10" data-tilt-speed="400" data-tilt-glare="true" data-tilt-max-glare="0.2">
+                    <i class="devicon-github-original colored"></i>
+                    <h3>Open Source</h3>
+                    <p>Contributing to public repositories globally.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="research" class="research section-padding">
+            <h2 class="section-title fade-in">Research & <span class="gradient-text">Innovation</span></h2>
+            <div class="about-grid" style="grid-template-columns: 1fr 1fr; gap: 2rem;">
+                <div class="research-col fade-in">
+                    <div class="glass-panel" style="padding: 2.5rem; height: 100%;">
+                        <h3 class="gradient-text" style="margin-bottom: 2rem; font-size: 1.8rem;">Current Interests</h3>
+                        <ul class="focus-list research-list">
+                            <li><i class="devicon-pytorch-original colored"></i> Artificial Intelligence</li>
+                            <li><i class="devicon-tensorflow-original colored"></i> Machine Learning</li>
+                            <li><i class="devicon-python-plain colored"></i> Large Language Models</li>
+                            <li><i class="devicon-opencv-plain colored"></i> Computer Vision</li>
+                            <li><i class="devicon-react-original colored"></i> Web Development</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="research-col fade-in" style="transition-delay: 0.2s;">
+                    <div class="glass-panel" style="padding: 2.5rem; height: 100%;">
+                        <h3 class="gradient-text-alt" style="margin-bottom: 2rem; font-size: 1.8rem;">Future Interests</h3>
+                        <ul class="focus-list research-list">
+                            <li><span style="font-size:1.2rem;">🤖</span> Agentic AI</li>
+                            <li><span style="font-size:1.2rem;">🔌</span> MCP (Model Context Protocol)</li>
+                            <li><span style="font-size:1.2rem;">📱</span> Edge AI</li>
+                            <li><i class="devicon-googlecloud-plain colored"></i> Cloud Computing</li>
+                            <li><span style="font-size:1.2rem;">🔒</span> Cybersecurity</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="github" class="github section-padding">
+            <h2 class="section-title fade-in">GitHub <span class="gradient-text">Dashboard</span></h2>
+            <p style="text-align: center; color: var(--text-secondary); margin-bottom: 3rem;" class="fade-in">My open source contributions and coding activity</p>
+            
+            <div class="github-dashboard fade-in">
+                <div class="gh-grid">
+                    <div class="glass-panel gh-card glow-border" data-tilt data-tilt-max="2" data-tilt-speed="400">
+                        <img src="https://github-readme-stats.vercel.app/api?username=umandathathsarani&show_icons=true&count_private=true&bg_color=00000000&title_color=8B5CF6&text_color=A1A1AA&icon_color=06B6D4&hide_border=true" alt="GitHub Stats" style="width: 100%;">
+                    </div>
+                    <div class="glass-panel gh-card glow-border" data-tilt data-tilt-max="2" data-tilt-speed="400">
+                        <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=umandathathsarani&layout=compact&bg_color=00000000&title_color=EC4899&text_color=A1A1AA&hide_border=true" alt="Top Languages" style="width: 100%;">
+                    </div>
+                    <div class="glass-panel gh-card glow-border" data-tilt data-tilt-max="2" data-tilt-speed="400" style="grid-column: 1 / -1;">
+                        <img src="https://github-readme-streak-stats.herokuapp.com/?user=umandathathsarani&theme=radical&background=00000000&hide_border=true" alt="GitHub Streak" style="width: 100%; max-width: 600px; margin: 0 auto; display: block;">
+                    </div>
+                    <div class="glass-panel gh-card glow-border" data-tilt data-tilt-max="2" data-tilt-speed="400" style="grid-column: 1 / -1;">
+                        <h3 style="text-align: center; margin-bottom: 1.5rem; color: var(--text-primary); font-size: 1.3rem;">Contribution Calendar</h3>
+                        <div style="background: rgba(255,255,255,0.05); padding: 1.5rem; border-radius: 10px;">
+                            <img src="https://ghchart.rshah.org/8B5CF6/umandathathsarani" alt="GitHub Contributions Chart" style="width: 100%; max-width: 800px; margin: 0 auto; display: block;">
                         </div>
                     </div>
                 </div>
@@ -79,68 +249,227 @@
         </section>
 
         <section id="education" class="education section-padding">
-            <h2 class="section-title fade-in" style="text-align: center; margin-bottom: 0.5rem;">Education</h2>
-            <p style="text-align: center; color: var(--text-secondary); margin-bottom: 3rem;" class="fade-in">My academic journey and qualifications</p>
+            <h2 class="section-title fade-in">Education & <span class="gradient-text">Qualifications</span></h2>
             
-            <div class="education-container fade-in">
-                <div class="education-list">
-                    <div class="edu-card">
-                        <div class="edu-info">
-                            <h3>BSc (Hons) in Information Technology</h3>
-                            <p class="edu-stream">Specializing in Artificial Intelligence</p>
-                            <p class="edu-school">Sri Lanka Institute of Information Technology (SLIIT)</p>
-                            <p class="edu-date">Present &bull; <span class="highlight">GPA: 3.39</span></p>
+            <div class="timeline-container fade-in" style="margin-top: 4rem;">
+                <div class="timeline">
+                    <div class="timeline-item left fade-in">
+                        <div class="timeline-content glass-panel glow-border" data-tilt data-tilt-max="5" data-tilt-glare="true" data-tilt-max-glare="0.1">
+                            <div class="timeline-year gradient-text">2024 - Present</div>
+                            <h4>Bachelor of Science Honours in Information Technology</h4>
+                            <h5 style="color: var(--accent-1); font-size: 1.1rem; margin-bottom: 1rem;">Specialized in Artificial Intelligence</h5>
+                            <p style="color: var(--text-primary);"><strong>SLIIT (Sri Lanka Institute of Information Technology)</strong></p>
                         </div>
                     </div>
-                    <div class="edu-card">
-                        <div class="edu-info">
-                            <h3>G.C.E. Advanced Level</h3>
-                            <p class="edu-stream">Physical Science Stream</p>
-                            <p class="edu-school">Southlands College, Galle</p>
-                            <p class="edu-date">2023 &bull; Combined Maths(S), Physics(S), Chemistry(C), General English(A)</p>
+                    <div class="timeline-item right fade-in">
+                        <div class="timeline-content glass-panel glow-border" data-tilt data-tilt-max="5" data-tilt-glare="true" data-tilt-max-glare="0.1">
+                            <div class="timeline-year gradient-text">2023</div>
+                            <h4>G.C.E. Advanced Level</h4>
+                            <p style="color: var(--text-primary); margin-bottom: 0.5rem;"><strong>Southlands College, Galle</strong></p>
+                            <p>Physical Science Stream (2nd shy): Combined Mathematics (S), Physics (S), Chemistry (C), General English (A).</p>
                         </div>
                     </div>
-                    <div class="edu-card">
-                        <div class="edu-info">
-                            <h3>G.C.E. Ordinary Level</h3>
-                            <p class="edu-school">Southlands College, Galle</p>
-                            <p class="edu-date">2018 &bull; 8As and 1B</p>
-                            <p class="edu-details" style="font-size: 0.85rem; color: var(--text-secondary); margin-top: 5px;">Sinhala(A), Buddhism(A), English(A), Maths(A), Science(A), History(A), Art(A), Tamil(A), ICT(B)</p>
+                    <div class="timeline-item left fade-in">
+                        <div class="timeline-content glass-panel glow-border" data-tilt data-tilt-max="5" data-tilt-glare="true" data-tilt-max-glare="0.1">
+                            <div class="timeline-year gradient-text">2018</div>
+                            <h4>G.C.E. Ordinary Level</h4>
+                            <p style="color: var(--text-primary); margin-bottom: 0.5rem;"><strong>Southlands College, Galle</strong></p>
+                            <p>8As and 1B: Sinhala (A), Buddhism (A), English (A), Mathematics (A), Science (A), History (A), Art (A), ICT (B), Tamil (A).</p>
                         </div>
                     </div>
                 </div>
-                <div class="education-visual">
-                    <div class="code-pattern">
-H1S)F&62T$54<H9G[41<ID%+<6KA9&D4%DC8[8FT_:M<)<UXA00
-;:7GE)4/4/%KS+N@ZMPH_<3D,%>BP/EW1{V}81|I9=-0}+P:>X4)
-I=_=DT_$]X(O8JH:UEY8-C/O8UM*&_{ZZA9H9Y4/;S-,/ &DT3R
-[M@XT1Z(L#KS@J{K}-Q&]CM@5+YXRX@>/WTP8[CV30Z-#Y:$AT[
-6/U+)]E0T*J&{KQA;X]PUQ5:1;JX[E[W!Z3[)7M-UAD,Y}441X>Q
-WQW_4G}P][D]91((L5QBA$G%*0@6#3{%&P*4]+: CM]G%NDA=+9+
-EWF!I2DB0-_G(-:&J,/M&{#]SDP5T@Y&079DZ>Z}(1X$5 30]_5(
-<ETO[/S[$M:$<7+},<UEZBH<-G&V[DV=V5))B*$635@2R9-)BB7#
+            </div>
+        </section>
+
+        <section id="certifications" class="certifications section-padding">
+            <h2 class="section-title fade-in">Professional <span class="gradient-text">Certifications</span></h2>
+            
+            <div class="cert-grid">
+                <!-- Cert 1 -->
+                <div class="cert-card glass-panel glow-border fade-in" data-tilt data-tilt-max="10" data-tilt-speed="400" data-tilt-glare="true" data-tilt-max-glare="0.2">
+                    <div class="cert-icon">
+                        <i class="devicon-python-plain colored"></i>
+                    </div>
+                    <div class="cert-content">
+                        <h3>Python for Data Science</h3>
+                        <div class="cert-provider">IBM</div>
+                        <div class="cert-date">Issued: Jan 2025</div>
+                        <div class="cert-buttons">
+                            <a href="#" class="btn primary-btn" style="padding: 10px 20px; font-size: 0.85rem;">Verify</a>
+                        </div>
                     </div>
                 </div>
+                
+                <!-- Cert 2 -->
+                <div class="cert-card glass-panel glow-border fade-in" data-tilt data-tilt-max="10" data-tilt-speed="400" data-tilt-glare="true" data-tilt-max-glare="0.2">
+                    <div class="cert-icon">
+                        <i class="devicon-googlecloud-plain colored"></i>
+                    </div>
+                    <div class="cert-content">
+                        <h3>Machine Learning Foundation</h3>
+                        <div class="cert-provider">Google</div>
+                        <div class="cert-date">Issued: Nov 2024</div>
+                        <div class="cert-buttons">
+                            <a href="#" class="btn primary-btn" style="padding: 10px 20px; font-size: 0.85rem;">Verify</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="skills" class="skills section-padding">
+            <h2 class="section-title fade-in">Technical <span class="gradient-text">Skills</span></h2>
+            
+            <div class="skills-container">
+                <!-- AI / Machine Learning -->
+                <div class="glass-panel skill-category fade-in">
+                    <h3 class="category-title"><i class="devicon-tensorflow-original colored"></i> AI & ML</h3>
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span class="skill-name"><i class="devicon-python-plain colored"></i> Python</span>
+                            <span class="skill-level">Expert</span>
+                        </div>
+                        <div class="progress-bar"><div class="progress-fill" data-width="95%"></div></div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span class="skill-name"><i class="devicon-pytorch-original colored"></i> PyTorch</span>
+                            <span class="skill-level">Advanced</span>
+                        </div>
+                        <div class="progress-bar"><div class="progress-fill" data-width="85%"></div></div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span class="skill-name"><i class="devicon-tensorflow-original colored"></i> TensorFlow</span>
+                            <span class="skill-level">Advanced</span>
+                        </div>
+                        <div class="progress-bar"><div class="progress-fill" data-width="80%"></div></div>
+                    </div>
+                </div>
+
+                <!-- Frontend -->
+                <div class="glass-panel skill-category fade-in">
+                    <h3 class="category-title"><i class="devicon-react-original colored"></i> Frontend</h3>
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span class="skill-name"><i class="devicon-javascript-plain colored"></i> JavaScript</span>
+                            <span class="skill-level">Advanced</span>
+                        </div>
+                        <div class="progress-bar"><div class="progress-fill" data-width="90%"></div></div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span class="skill-name"><i class="devicon-react-original colored"></i> React</span>
+                            <span class="skill-level">Intermediate</span>
+                        </div>
+                        <div class="progress-bar"><div class="progress-fill" data-width="75%"></div></div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span class="skill-name"><i class="devicon-html5-plain colored"></i> HTML/CSS</span>
+                            <span class="skill-level">Expert</span>
+                        </div>
+                        <div class="progress-bar"><div class="progress-fill" data-width="95%"></div></div>
+                    </div>
+                </div>
+                
+                <!-- Backend -->
+                <div class="glass-panel skill-category fade-in">
+                    <h3 class="category-title"><i class="devicon-nodejs-plain colored"></i> Backend</h3>
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span class="skill-name"><i class="devicon-nodejs-plain colored"></i> Node.js</span>
+                            <span class="skill-level">Intermediate</span>
+                        </div>
+                        <div class="progress-bar"><div class="progress-fill" data-width="70%"></div></div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span class="skill-name"><i class="devicon-fastapi-plain colored"></i> FastAPI</span>
+                            <span class="skill-level">Advanced</span>
+                        </div>
+                        <div class="progress-bar"><div class="progress-fill" data-width="85%"></div></div>
+                    </div>
+                </div>
+                
+                <!-- Tools & Cloud -->
+                <div class="glass-panel skill-category fade-in">
+                    <h3 class="category-title"><i class="devicon-amazonwebservices-original colored"></i> Tools & Cloud</h3>
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span class="skill-name"><i class="devicon-git-plain colored"></i> Git/GitHub</span>
+                            <span class="skill-level">Advanced</span>
+                        </div>
+                        <div class="progress-bar"><div class="progress-fill" data-width="90%"></div></div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span class="skill-name"><i class="devicon-docker-plain colored"></i> Docker</span>
+                            <span class="skill-level">Intermediate</span>
+                        </div>
+                        <div class="progress-bar"><div class="progress-fill" data-width="65%"></div></div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="dev-env-container fade-in" style="margin-top: 4rem;">
+                <h3 class="section-subtitle" style="text-align: center; margin-bottom: 2rem; font-size: 2rem;">My <span class="gradient-text">Workspace</span></h3>
+                <div class="dev-env-grid">
+                    <div class="dev-item glass-panel glow-border">
+                        <span class="dev-label">OS</span>
+                        <span class="dev-value"><i class="devicon-windows8-original colored"></i> Windows 11</span>
+                    </div>
+                    <div class="dev-item glass-panel glow-border">
+                        <span class="dev-label">Editor</span>
+                        <span class="dev-value"><i class="devicon-vscode-plain colored"></i> VS Code</span>
+                    </div>
+                    <div class="dev-item glass-panel glow-border">
+                        <span class="dev-label">Browser</span>
+                        <span class="dev-value"><i class="devicon-chrome-plain colored"></i> Chrome</span>
+                    </div>
             </div>
         </section>
 
         <section id="projects" class="projects section-padding">
             <h2 class="section-title fade-in">Featured <span class="gradient-text">Projects</span></h2>
             
-            <div class="project-filters fade-in">
+            <!-- Featured Premium Project -->
+            <div class="featured-project glass-panel glow-border fade-in" data-tilt data-tilt-max="2" data-tilt-speed="400" data-tilt-glare="true" data-tilt-max-glare="0.1">
+                <div class="featured-image">
+                    <img src="assets/cat_breed_ai.png" alt="Featured AI Project">
+                </div>
+                <div class="featured-content">
+                    <div class="featured-badge gradient-text">Featured Project</div>
+                    <h3 style="font-size: 2.2rem; margin-bottom: 1rem;">Cat Breed AI Classifier</h3>
+                    <p class="featured-desc">An advanced deep learning system capable of identifying over 50 different cat breeds with high accuracy. Built for production with a scalable REST API.</p>
+                    
+                    <div class="featured-details">
+                        <div class="detail-item"><i class="devicon-python-plain colored"></i> Python</div>
+                        <div class="detail-item"><i class="devicon-tensorflow-original colored"></i> TensorFlow</div>
+                        <div class="detail-item"><strong>Difficulty:</strong> Advanced</div>
+                        <div class="detail-item"><strong>Status:</strong> Completed</div>
+                    </div>
+
+                    <ul class="featured-features focus-list" style="margin-top: 1.5rem; margin-bottom: 2rem;">
+                        <li><span style="color:var(--accent-1)">✓</span> Real-time inference</li>
+                        <li><span style="color:var(--accent-1)">✓</span> REST API backend</li>
+                        <li><span style="color:var(--accent-1)">✓</span> 95% validation accuracy</li>
+                    </ul>
+
+                    <div class="hero-buttons">
+                        <div class="magnetic-btn"><a href="#" class="btn primary-btn"><i class="devicon-github-original"></i> View Source</a></div>
+                        <div class="magnetic-btn"><a href="#" class="btn secondary-btn">Live Demo</a></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-filters fade-in" style="margin-top: 5rem;">
                 <button class="filter-btn active" data-filter="all">All</button>
                 <button class="filter-btn" data-filter="ml">Machine Learning</button>
-                <button class="filter-btn" data-filter="web">Web App</button>
-                <button class="filter-btn" data-filter="games">Games</button>
+                <button class="filter-btn" data-filter="web">Web Dev</button>
             </div>
 
             <div class="project-grid">
-                <div class="project-card scale-in" data-category="web">
-                    <div class="project-image" style="background: url('assets/stress_relief_hub.png');"></div>
-                    <div class="project-info">
-                        <h3>Stress Relief Hub</h3>
-                        <p>An interactive, single-page application with 12 physics-driven modules designed to help users unwind, focus, and de-stress.</p>
-                        <a href="https://umandathathsarani.github.io/stress-relief-hub/" target="_blank" rel="noopener noreferrer" class="project-link">View Live Demo &rarr;</a>
                     </div>
                 </div>
                 <div class="project-card scale-in" style="transition-delay: 0.2s;" data-category="games">
@@ -199,28 +528,77 @@ EWF!I2DB0-_G(-:&J,/M&{#]SDP5T@Y&079DZ>Z}(1X$5 30]_5(
                 <p>Feel free to reach out for collaborations or just a friendly hello!</p>
                 
                 <div class="contact-buttons fade-in" style="display: flex; flex-wrap: wrap; justify-content: center; gap: 1rem;">
-                    <a href="mailto:binuuma3218@gmail.com" class="btn primary-btn">Email 1</a>
-                    <a href="mailto:umathathsarani2003@gmail.com" class="btn primary-btn">Email 2</a>
-                    <a href="https://github.com/umandathathsarani" target="_blank" rel="noopener noreferrer" class="btn secondary-btn">GitHub</a>
-                    <a href="https://linkedin.com/in/umanda-thathsarani" target="_blank" rel="noopener noreferrer" class="btn secondary-btn">LinkedIn</a>
-                    <a href="https://www.instagram.com/b.uma.t" target="_blank" rel="noopener noreferrer" class="btn secondary-btn">Instagram</a>
-                    <a href="https://wa.me/94742813833" target="_blank" rel="noopener noreferrer" class="btn secondary-btn">WhatsApp</a>
+            <h2 class="section-title fade-in">Get In <span class="gradient-text">Touch</span></h2>
+            
+            <div class="contact-grid">
+                <!-- Contact Form (Left) -->
+                <div class="contact-left fade-in">
+                    <div class="glass-panel" style="padding: 3rem;">
+                        <h3 style="margin-bottom: 2rem; color: var(--text-primary); font-size: 1.5rem;">Send a Message</h3>
+                        <form class="contact-form">
+                            <div class="form-group">
+                                <label for="name">Name</label>
+                                <input type="text" id="name" placeholder="John Doe" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email</label>
+                                <input type="email" id="email" placeholder="john@example.com" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="message">Message</label>
+                                <textarea id="message" rows="5" placeholder="Your message here..." required></textarea>
+                            </div>
+                            <button type="submit" class="btn primary-btn glow-border" style="width: 100%; margin-top: 1rem;">Send Message</button>
+                        </form>
+                    </div>
+                </div>
+                
+                <!-- Contact Info (Right) -->
+                <div class="contact-right fade-in" style="transition-delay: 0.2s;">
+                    <div class="glass-panel" style="padding: 3rem; height: 100%; display: flex; flex-direction: column; justify-content: center;">
+                        <h3 style="margin-bottom: 2rem; color: var(--text-primary); font-size: 1.5rem;">Connect With Me</h3>
+                        
+                        <div class="contact-info-list">
+                            <a href="mailto:umathathsarani2003@gmail.com" class="info-item">
+                                <div class="info-icon"><i class="devicon-google-plain colored"></i></div>
+                                <div>
+                                    <h4>Email</h4>
+                                    <p>umathathsarani2003@gmail.com</p>
+                                </div>
+                            </a>
+                            <a href="https://github.com/umandathathsarani" target="_blank" class="info-item">
+                                <div class="info-icon"><i class="devicon-github-original colored"></i></div>
+                                <div>
+                                    <h4>GitHub</h4>
+                                    <p>@umandathathsarani</p>
+                                </div>
+                            </a>
+                            <a href="https://linkedin.com/in/umandathathsarani" target="_blank" class="info-item">
+                                <div class="info-icon"><i class="devicon-linkedin-plain colored"></i></div>
+                                <div>
+                                    <h4>LinkedIn</h4>
+                                    <p>Umanda Thathsarani</p>
+                                </div>
+                            </a>
+                            <div class="info-item">
+                                <div class="info-icon" style="color: var(--accent-2); font-size: 1.5rem;">📍</div>
+                                <div>
+                                    <h4>Location</h4>
+                                    <p>Sri Lanka</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div style="margin-top: 3rem;">
+                            <a href="#" class="btn secondary-btn" style="width: 100%; text-align: center;"><i class="devicon-bash-plain"></i> Download Resume</a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
     </main>
 
     <footer class="site-footer">
-        <div class="footer-content">
-            <div class="footer-logo">UT<span>.</span></div>
-            <div class="social-links">
-                <a href="https://github.com/umandathathsarani" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
-                </a>
-                <a href="https://www.linkedin.com/in/binuri-umanda-859bba337" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
-                </a>
-                <a href="https://www.instagram.com/b.uma.t" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
                 </a>
             </div>
@@ -229,6 +607,8 @@ EWF!I2DB0-_G(-:&J,/M&{#]SDP5T@Y&079DZ>Z}(1X$5 30]_5(
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/tsparticles@2.11.0/tsparticles.bundle.min.js"></script>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.8.1/vanilla-tilt.min.js"></script>
     <script src="assets/js/main.js"></script>
     <script src="assets/js/filtering.js"></script>
     <script src="assets/js/animations.js"></script>

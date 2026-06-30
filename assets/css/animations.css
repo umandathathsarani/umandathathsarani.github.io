@@ -164,3 +164,41 @@
     z-index: -1;
     pointer-events: none;
 }
+
+/* Hero Abstract Shapes */
+.hero-shapes {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    pointer-events: none;
+}
+.shape {
+    position: absolute;
+    border-radius: 50%;
+    filter: blur(80px);
+    opacity: 0.5;
+}
+.shape-1 {
+    width: 500px;
+    height: 500px;
+    background: var(--accent-1);
+    top: -100px;
+    right: -100px;
+    animation: float 10s ease-in-out infinite;
+}
+.shape-2 {
+    width: 400px;
+    height: 400px;
+    background: var(--accent-2);
+    bottom: -100px;
+    left: 20%;
+    animation: float 12s ease-in-out infinite reverse;
+}
+@keyframes float {
+    0% { transform: translateY(0) scale(1); }
+    50% { transform: translateY(50px) scale(1.1); }
+    100% { transform: translateY(0) scale(1); }
+}

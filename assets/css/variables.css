@@ -1,16 +1,27 @@
 :root {
-    --bg-color: #050505;
-    --surface-color: #111111;
-    --text-primary: #ffffff;
-    --text-secondary: #a0a0a0;
-    --accent-1: #6E56FF;
-    --accent-2: #FF56A5;
+    /* Brand Colors per requirements */
+    --bg-color: #09090B;
+    --surface-color: #111827;
+    --surface-card: rgba(20, 20, 30, 0.75);
+    
+    /* Typography Colors */
+    --text-primary: #FFFFFF;
+    --text-secondary: #A1A1AA;
+    --text-muted: #71717A;
+    
+    /* Accents */
+    --accent-1: #8B5CF6; /* Purple (Primary) */
+    --accent-2: #EC4899; /* Pink */
+    --accent-3: #3B82F6; /* Blue */
+    --accent-4: #06B6D4; /* Cyan */
+    
+    /* Layout & UI */
     --font-main: 'Outfit', sans-serif;
-    --nav-bg: rgba(5, 5, 5, 0.8);
+    --nav-bg: rgba(9, 9, 11, 0.85);
     --border-color: rgba(255, 255, 255, 0.05);
-    --border-color-hover: rgba(255, 255, 255, 0.1);
+    --border-color-hover: rgba(255, 255, 255, 0.15);
     --btn-secondary-border: rgba(255, 255, 255, 0.2);
-    --mobile-menu-bg: rgba(17, 17, 17, 0.98);
+    --mobile-menu-bg: rgba(9, 9, 11, 0.98);
 }
 
 * {
