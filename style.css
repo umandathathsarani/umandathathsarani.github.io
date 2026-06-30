@@ -285,11 +285,40 @@ body {
     margin-bottom: 2.5rem;
     font-size: 1.2rem;
 }
-footer {
-    text-align: center;
-    padding: 2rem;
-    color: var(--text-secondary);
+.site-footer {
+    padding: 4rem 10% 2rem;
     border-top: 1px solid var(--border-color);
+    background: var(--bg-color);
+}
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+}
+.footer-logo {
+    font-size: 2rem;
+    font-weight: 800;
+}
+.footer-logo span {
+    color: var(--accent-2);
+}
+.social-links {
+    display: flex;
+    gap: 1.5rem;
+}
+.social-links a {
+    color: var(--text-secondary);
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+.social-links a:hover {
+    color: var(--accent-1);
+    transform: translateY(-3px);
+}
+.site-footer p {
+    color: var(--text-secondary);
+    font-size: 0.9rem;
+    margin-top: 1rem;
 }
 /* Animations */
 .fade-in {
