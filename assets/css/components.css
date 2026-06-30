@@ -140,7 +140,11 @@
     transform-style: preserve-3d;
 }
 .hero-illustration img {
+    position: relative;
+    z-index: 1;
     transform: translateZ(20px);
+    -webkit-mask-image: radial-gradient(ellipse at center, black 70%, transparent 100%);
+    mask-image: radial-gradient(ellipse at center, black 70%, transparent 100%);
 }
 .floating-icon {
     position: absolute;
@@ -150,9 +154,8 @@
     border-radius: 12px;
     padding: 10px;
     box-shadow: 0 10px 30px rgba(0,0,0,0.5);
-    animation: float 6s ease-in-out infinite;
-    transform: translateZ(50px);
-    z-index: 3;
+    animation: float-icon 6s ease-in-out infinite;
+    z-index: 10;
 }
 .icon-1 { top: -20px; right: -20px; animation-delay: 0s; }
 .icon-2 { bottom: 40px; left: -30px; animation-delay: 2s; }
@@ -309,15 +312,21 @@
     align-items: center;
     gap: 1.5rem;
 }
-.cert-icon {
-    font-size: 3.5rem;
-    color: var(--accent-1);
+.cert-image-placeholder {
+    width: 120px;
+    height: 80px;
     background: rgba(255, 255, 255, 0.05);
-    padding: 1rem;
-    border-radius: 15px;
+    border: 1px dashed var(--border-color);
+    border-radius: 10px;
     display: flex;
     justify-content: center;
     align-items: center;
+    text-align: center;
+    padding: 0.5rem;
+}
+.placeholder-text {
+    font-size: 0.75rem;
+    color: var(--text-muted);
 }
 .cert-content h3 {
     font-size: 1.2rem;
@@ -356,6 +365,12 @@
 }
 .interest-card i {
     font-size: 3.5rem;
+    filter: drop-shadow(0 0 15px rgba(255, 255, 255, 0.15));
+    transition: filter 0.3s ease, transform 0.3s ease;
+}
+.interest-card:hover i {
+    filter: drop-shadow(0 0 20px rgba(255, 255, 255, 0.3));
+    transform: translateY(-3px);
 }
 .interest-card h3 {
     color: var(--text-primary);
@@ -567,6 +582,7 @@
     top: 15px;
     right: 15px;
     background: rgba(9, 9, 11, 0.8);
+    -webkit-backdrop-filter: blur(10px);
     backdrop-filter: blur(10px);
     padding: 5px 12px;
     border-radius: 20px;
@@ -707,6 +723,7 @@
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     opacity: 0.6;
+    -webkit-user-select: none;
     user-select: none;
 }
 

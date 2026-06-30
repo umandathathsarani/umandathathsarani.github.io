@@ -54,12 +54,6 @@
                     <li><span class="trait-icon">✓</span> Problem Solver</li>
                 </ul>
 
-                <div class="hero-stats fade-in">
-                    <div class="stat-item"><span class="stat-number" data-target="25">0</span>+<br><span class="stat-label">Projects</span></div>
-                    <div class="stat-item"><span class="stat-number" data-target="40">0</span>+<br><span class="stat-label">Repositories</span></div>
-                    <div class="stat-item"><span class="stat-number" data-target="15">0</span>+<br><span class="stat-label">Technologies</span></div>
-                    <div class="stat-item"><span class="stat-number" data-target="5">0</span>+<br><span class="stat-label">Research Areas</span></div>
-                </div>
 
                 <div class="hero-buttons">
                     <div class="magnetic-btn"><a href="#projects" class="btn primary-btn glow-border">View My Work</a></div>
@@ -87,20 +81,15 @@
             
             <div class="about-grid">
                 <div class="about-left fade-in">
-                    <div class="tech-orbit-container">
-                        <div class="tech-orbit">
-                            <div class="orbit-center"><i class="devicon-python-plain"></i></div>
-                            <div class="orbit-ring">
-                                <div class="orbit-item" style="--i:1;"><i class="devicon-pytorch-original"></i></div>
-                                <div class="orbit-item" style="--i:2;"><i class="devicon-tensorflow-original"></i></div>
-                                <div class="orbit-item" style="--i:3;"><i class="devicon-react-original"></i></div>
-                                <div class="orbit-item" style="--i:4;"><i class="devicon-docker-plain"></i></div>
-                                <div class="orbit-item" style="--i:5;"><i class="devicon-amazonwebservices-original"></i></div>
-                                <div class="orbit-item" style="--i:6;"><i class="devicon-javascript-plain"></i></div>
-                                <div class="orbit-item" style="--i:7;"><i class="devicon-fastapi-plain"></i></div>
-                                <div class="orbit-item" style="--i:8;"><i class="devicon-git-plain"></i></div>
-                            </div>
-                        </div>
+                    <div class="tech-cloud fade-in">
+                        <div class="tech-tag" data-tilt data-tilt-scale="1.1"><i class="devicon-python-plain colored"></i> Python</div>
+                        <div class="tech-tag" data-tilt data-tilt-scale="1.1"><i class="devicon-pytorch-original colored"></i> PyTorch</div>
+                        <div class="tech-tag" data-tilt data-tilt-scale="1.1"><i class="devicon-tensorflow-original colored"></i> TensorFlow</div>
+                        <div class="tech-tag" data-tilt data-tilt-scale="1.1"><i class="devicon-react-original colored"></i> React</div>
+                        <div class="tech-tag" data-tilt data-tilt-scale="1.1"><i class="devicon-docker-plain colored"></i> Docker</div>
+                        <div class="tech-tag" data-tilt data-tilt-scale="1.1"><i class="devicon-amazonwebservices-original colored"></i> AWS</div>
+                        <div class="tech-tag" data-tilt data-tilt-scale="1.1"><i class="devicon-javascript-plain colored"></i> JavaScript</div>
+                        <div class="tech-tag" data-tilt data-tilt-scale="1.1"><i class="devicon-fastapi-plain colored"></i> FastAPI</div>
                     </div>
                 </div>
                 
@@ -186,7 +175,7 @@
                     <p>Deploying on modern cloud infrastructure.</p>
                 </div>
                 <div class="glass-panel glow-border interest-card" data-tilt data-tilt-max="10" data-tilt-speed="400" data-tilt-glare="true" data-tilt-max-glare="0.2">
-                    <i class="devicon-github-original colored"></i>
+                    <i class="devicon-github-original" style="color: var(--text-primary);"></i>
                     <h3>Open Source</h3>
                     <p>Contributing to public repositories globally.</p>
                 </div>
@@ -230,13 +219,92 @@
             <div class="github-dashboard fade-in">
                 <div class="gh-grid">
                     <div class="glass-panel gh-card glow-border" data-tilt data-tilt-max="2" data-tilt-speed="400">
-                        <img src="https://github-readme-stats.vercel.app/api?username=umandathathsarani&show_icons=true&count_private=true&bg_color=00000000&title_color=8B5CF6&text_color=A1A1AA&icon_color=06B6D4&hide_border=true" alt="GitHub Stats" style="width: 100%;">
+                        <div style="width: 100%; padding: 1.5rem; text-align: left;">
+                            <h3 style="color: #8B5CF6; margin-bottom: 2rem; font-size: 1.3rem; display: flex; align-items: center; gap: 0.8rem;"><i class="devicon-github-original" style="color: #06B6D4; font-size: 1.8rem;"></i> GitHub Stats</h3>
+                            <div style="display: flex; flex-direction: column; gap: 1.5rem;">
+                                <div style="display: flex; justify-content: space-between; align-items: center;">
+                                    <span style="color: var(--text-muted); font-size: 1.05rem;">⭐ Total Stars Earned:</span>
+                                    <span style="color: var(--text-primary); font-weight: 600; font-size: 1.1rem;">14</span>
+                                </div>
+                                <div style="display: flex; justify-content: space-between; align-items: center;">
+                                    <span style="color: var(--text-muted); font-size: 1.05rem;">💻 Total Commits (2026):</span>
+                                    <span style="color: var(--text-primary); font-weight: 600; font-size: 1.1rem;">342</span>
+                                </div>
+                                <div style="display: flex; justify-content: space-between; align-items: center;">
+                                    <span style="color: var(--text-muted); font-size: 1.05rem;">🔄 Total PRs:</span>
+                                    <span style="color: var(--text-primary); font-weight: 600; font-size: 1.1rem;">28</span>
+                                </div>
+                                <div style="display: flex; justify-content: space-between; align-items: center;">
+                                    <span style="color: var(--text-muted); font-size: 1.05rem;">🐛 Total Issues:</span>
+                                    <span style="color: var(--text-primary); font-weight: 600; font-size: 1.1rem;">12</span>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                     <div class="glass-panel gh-card glow-border" data-tilt data-tilt-max="2" data-tilt-speed="400">
-                        <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=umandathathsarani&layout=compact&bg_color=00000000&title_color=EC4899&text_color=A1A1AA&hide_border=true" alt="Top Languages" style="width: 100%;">
+                        <div style="width: 100%; padding: 1.5rem; text-align: left;">
+                            <h3 style="color: #EC4899; margin-bottom: 2rem; font-size: 1.3rem; display: flex; align-items: center; gap: 0.8rem;"><i class="devicon-bash-plain" style="color: #EC4899; font-size: 1.5rem;"></i> Top Languages</h3>
+                            <div style="display: flex; flex-direction: column; gap: 1.2rem;">
+                                <div>
+                                    <div style="display: flex; justify-content: space-between; margin-bottom: 0.4rem;">
+                                        <span style="color: var(--text-muted); font-size: 0.95rem;">Python</span>
+                                        <span style="color: var(--text-primary); font-size: 0.95rem;">48%</span>
+                                    </div>
+                                    <div style="width: 100%; background: rgba(255,255,255,0.05); height: 8px; border-radius: 4px; overflow: hidden;">
+                                        <div style="width: 48%; height: 100%; background: #3572A5; border-radius: 4px;"></div>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div style="display: flex; justify-content: space-between; margin-bottom: 0.4rem;">
+                                        <span style="color: var(--text-muted); font-size: 0.95rem;">JavaScript</span>
+                                        <span style="color: var(--text-primary); font-size: 0.95rem;">35%</span>
+                                    </div>
+                                    <div style="width: 100%; background: rgba(255,255,255,0.05); height: 8px; border-radius: 4px; overflow: hidden;">
+                                        <div style="width: 35%; height: 100%; background: #f1e05a; border-radius: 4px;"></div>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div style="display: flex; justify-content: space-between; margin-bottom: 0.4rem;">
+                                        <span style="color: var(--text-muted); font-size: 0.95rem;">Java</span>
+                                        <span style="color: var(--text-primary); font-size: 0.95rem;">12%</span>
+                                    </div>
+                                    <div style="width: 100%; background: rgba(255,255,255,0.05); height: 8px; border-radius: 4px; overflow: hidden;">
+                                        <div style="width: 12%; height: 100%; background: #b07219; border-radius: 4px;"></div>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div style="display: flex; justify-content: space-between; margin-bottom: 0.4rem;">
+                                        <span style="color: var(--text-muted); font-size: 0.95rem;">HTML/CSS</span>
+                                        <span style="color: var(--text-primary); font-size: 0.95rem;">5%</span>
+                                    </div>
+                                    <div style="width: 100%; background: rgba(255,255,255,0.05); height: 8px; border-radius: 4px; overflow: hidden;">
+                                        <div style="width: 5%; height: 100%; background: #e34c26; border-radius: 4px;"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                     <div class="glass-panel gh-card glow-border" data-tilt data-tilt-max="2" data-tilt-speed="400" style="grid-column: 1 / -1;">
-                        <img src="https://github-readme-streak-stats.herokuapp.com/?user=umandathathsarani&theme=radical&background=00000000&hide_border=true" alt="GitHub Streak" style="width: 100%; max-width: 600px; margin: 0 auto; display: block;">
+                        <div style="width: 100%; padding: 1.5rem; text-align: center;">
+                            <h3 style="color: #F87171; margin-bottom: 2.5rem; font-size: 1.3rem;"><i class="devicon-bash-plain" style="color: #F87171;"></i> GitHub Contribution Streak</h3>
+                            <div style="display: flex; justify-content: space-around; align-items: center; flex-wrap: wrap; gap: 2rem;">
+                                <div>
+                                    <p style="color: var(--text-muted); font-size: 0.9rem; margin-bottom: 0.5rem; text-transform: uppercase; letter-spacing: 1px;">Total Contributions</p>
+                                    <p style="color: var(--text-primary); font-size: 2.8rem; font-weight: 700; text-shadow: 0 0 15px rgba(248, 113, 113, 0.3);">482</p>
+                                    <p style="color: var(--text-muted); font-size: 0.85rem; margin-top: 0.5rem;">Jan 1 - Present</p>
+                                </div>
+                                <div>
+                                    <p style="color: var(--text-muted); font-size: 0.9rem; margin-bottom: 0.5rem; text-transform: uppercase; letter-spacing: 1px;">Current Streak</p>
+                                    <p style="color: var(--text-primary); font-size: 2.8rem; font-weight: 700; text-shadow: 0 0 15px rgba(248, 113, 113, 0.3);">12</p>
+                                    <p style="color: var(--text-muted); font-size: 0.85rem; margin-top: 0.5rem;">days</p>
+                                </div>
+                                <div>
+                                    <p style="color: var(--text-muted); font-size: 0.9rem; margin-bottom: 0.5rem; text-transform: uppercase; letter-spacing: 1px;">Longest Streak</p>
+                                    <p style="color: var(--text-primary); font-size: 2.8rem; font-weight: 700; text-shadow: 0 0 15px rgba(248, 113, 113, 0.3);">45</p>
+                                    <p style="color: var(--text-muted); font-size: 0.85rem; margin-top: 0.5rem;">days</p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                     <div class="glass-panel gh-card glow-border" data-tilt data-tilt-max="2" data-tilt-speed="400" style="grid-column: 1 / -1;">
                         <h3 style="text-align: center; margin-bottom: 1.5rem; color: var(--text-primary); font-size: 1.3rem;">Contribution Calendar</h3>
@@ -285,34 +353,14 @@
             <h2 class="section-title fade-in">Professional <span class="gradient-text">Certifications</span></h2>
             
             <div class="cert-grid">
-                <!-- Cert 1 -->
-                <div class="cert-card glass-panel glow-border fade-in" data-tilt data-tilt-max="10" data-tilt-speed="400" data-tilt-glare="true" data-tilt-max-glare="0.2">
-                    <div class="cert-icon">
-                        <i class="devicon-python-plain colored"></i>
-                    </div>
-                    <div class="cert-content">
-                        <h3>Python for Data Science</h3>
-                        <div class="cert-provider">IBM</div>
-                        <div class="cert-date">Issued: Jan 2025</div>
-                        <div class="cert-buttons">
-                            <a href="#" class="btn primary-btn" style="padding: 10px 20px; font-size: 0.85rem;">Verify</a>
-                        </div>
-                    </div>
+                <!-- Cert Placeholder 1 -->
+                <div class="cert-card glass-panel glow-border fade-in" data-tilt data-tilt-max="5" data-tilt-speed="400" data-tilt-glare="true" data-tilt-max-glare="0.1" style="justify-content: center; text-align: center; min-height: 150px;">
+                    <h3 style="color: var(--text-muted); font-weight: 400;">[ Certificate Placeholder 1 ]</h3>
                 </div>
                 
-                <!-- Cert 2 -->
-                <div class="cert-card glass-panel glow-border fade-in" data-tilt data-tilt-max="10" data-tilt-speed="400" data-tilt-glare="true" data-tilt-max-glare="0.2">
-                    <div class="cert-icon">
-                        <i class="devicon-googlecloud-plain colored"></i>
-                    </div>
-                    <div class="cert-content">
-                        <h3>Machine Learning Foundation</h3>
-                        <div class="cert-provider">Google</div>
-                        <div class="cert-date">Issued: Nov 2024</div>
-                        <div class="cert-buttons">
-                            <a href="#" class="btn primary-btn" style="padding: 10px 20px; font-size: 0.85rem;">Verify</a>
-                        </div>
-                    </div>
+                <!-- Cert Placeholder 2 -->
+                <div class="cert-card glass-panel glow-border fade-in" data-tilt data-tilt-max="5" data-tilt-speed="400" data-tilt-glare="true" data-tilt-max-glare="0.1" style="justify-content: center; text-align: center; min-height: 150px;">
+                    <h3 style="color: var(--text-muted); font-weight: 400;">[ Certificate Placeholder 2 ]</h3>
                 </div>
             </div>
         </section>
@@ -457,8 +505,7 @@
                     </ul>
 
                     <div class="hero-buttons">
-                        <div class="magnetic-btn"><a href="#" class="btn primary-btn"><i class="devicon-github-original"></i> View Source</a></div>
-                        <div class="magnetic-btn"><a href="#" class="btn secondary-btn">Live Demo</a></div>
+                        <div class="magnetic-btn"><a href="https://github.com/umandathathsarani/cat-identifier-ai" target="_blank" rel="noopener noreferrer" class="btn primary-btn"><i class="devicon-github-original"></i> View Source</a></div>
                     </div>
                 </div>
             </div>
@@ -467,142 +514,329 @@
                 <button class="filter-btn active" data-filter="all">All</button>
                 <button class="filter-btn" data-filter="ml">Machine Learning</button>
                 <button class="filter-btn" data-filter="web">Web Dev</button>
+                <button class="filter-btn" data-filter="games">Games & Interactive</button>
             </div>
 
             <div class="project-grid">
-                    </div>
-                </div>
+                <!-- Top Image Projects -->
                 <div class="project-card scale-in" style="transition-delay: 0.2s;" data-category="games">
-                    <div class="project-image" style="background: url('assets/cyberpunk_hacker.png');"></div>
+                    <div class="project-image" style="background: url('assets/cyberpunk_hacker.png'); background-size: cover; background-position: center;"></div>
                     <div class="project-info">
                         <h3>Cyberpunk Hacker Escape</h3>
                         <p>An immersive, text-based terminal web game featuring a branching narrative, state management, and custom hacking minigames.</p>
-                        <a href="https://github.com/umandathathsarani/cyberpunk-hacker-escape" target="_blank" rel="noopener noreferrer" class="project-link">View on GitHub &rarr;</a>
+                        <div class="project-links" style="margin-top: auto; padding-top: 1.5rem;">
+                            <a href="https://github.com/umandathathsarani/cyberpunk-hacker-escape" target="_blank" rel="noopener noreferrer" class="btn primary-btn magnetic-btn" style="width: 100%; text-align: center;"><i class="devicon-github-original"></i> View Source</a>
+                        </div>
                     </div>
                 </div>
-                <div class="project-card scale-in" style="transition-delay: 0.4s;" data-category="games">
-                    <div class="project-image" style="background: url('assets/midnight_mansion.png');"></div>
-                    <div class="project-info">
-                        <h3>The Midnight Mansion</h3>
-                        <p>A fully interactive, browser-based escape room experience with interactive physics puzzles and a cinematic audio system.</p>
-                        <a href="https://github.com/umandathathsarani/umanda-escape-room" target="_blank" rel="noopener noreferrer" class="project-link">View on GitHub &rarr;</a>
-                    </div>
-                </div>
-                <div class="project-card scale-in" style="transition-delay: 0.6s;" data-category="ml">
-                    <div class="project-image" style="background: url('assets/cat_breed_ai.png');"></div>
-                    <div class="project-info">
-                        <h3>Cat Breed Identifier AI</h3>
-                        <p>A production-ready MLOps pipeline and React Native app that identifies 42 cat breeds offline using deep learning.</p>
-                        <a href="https://github.com/umandathathsarani/Cat-Breed-Identifier-AI" class="project-link" target="_blank" rel="noopener noreferrer">View on GitHub &rarr;</a>
-                    </div>
-                </div>
-                <div class="project-card scale-in" style="transition-delay: 0.8s;" data-category="ml">
-                    <div class="project-image" style="background: url('assets/face_mask_detector.png');"></div>
+                
+                <div class="project-card scale-in" style="transition-delay: 0.4s;" data-category="ml">
+                    <div class="project-image" style="background: url('assets/face_mask_detector.png'); background-size: cover; background-position: center;"></div>
                     <div class="project-info">
                         <h3>Face Mask Detector</h3>
                         <p>An end-to-end Machine Learning project that detects faces and classifies whether they are wearing a face mask in real-time.</p>
-                        <a href="https://github.com/umandathathsarani/Face-Mask-Detector" class="project-link" target="_blank" rel="noopener noreferrer">View on GitHub &rarr;</a>
+                        <div class="project-links" style="margin-top: auto; padding-top: 1.5rem;">
+                            <a href="https://github.com/umandathathsarani/Face-Mask-Detector" target="_blank" rel="noopener noreferrer" class="btn primary-btn magnetic-btn" style="width: 100%; text-align: center;"><i class="devicon-github-original"></i> View Source</a>
+                        </div>
                     </div>
                 </div>
-                <div class="project-card scale-in" style="transition-delay: 1.0s;" data-category="ml">
-                    <div class="project-image" style="background: url('assets/spam_classifier.png');"></div>
+                
+                <div class="project-card scale-in" style="transition-delay: 0.6s;" data-category="ml">
+                    <div class="project-image" style="background: url('assets/spam_classifier.png'); background-size: cover; background-position: center;"></div>
                     <div class="project-info">
                         <h3>Spam Email Classifier</h3>
                         <p>An NLP pipeline that autonomously classifies text messages and emails as Spam or Ham using Multinomial Naive Bayes.</p>
-                        <a href="https://github.com/umandathathsarani/Spam-Classifier" class="project-link" target="_blank" rel="noopener noreferrer">View on GitHub &rarr;</a>
+                        <div class="project-links" style="margin-top: auto; padding-top: 1.5rem;">
+                            <a href="https://github.com/umandathathsarani/Spam-Classifier" target="_blank" rel="noopener noreferrer" class="btn primary-btn magnetic-btn" style="width: 100%; text-align: center;"><i class="devicon-github-original"></i> View Source</a>
+                        </div>
                     </div>
                 </div>
-            </div>
-        </section>
 
-        <section id="certifications" class="certifications section-padding">
-            <h2 class="section-title fade-in">Licenses & <span class="gradient-text">Certifications</span></h2>
-            <div class="project-grid" style="grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));">
-                <!-- Certifications will be added here later -->
+                <!-- Merged Projects -->
+                <div class="project-card scale-in" style="transition-delay: 0.7s;" data-category="ml web">
+                    <div class="project-image" style="background: url('assets/exoplanet_explorer.png'); background-size: cover; background-position: center;"></div>
+                    <div class="project-info">
+                        <h3>Exoplanet Explorer</h3>
+                        <p>Full-stack web application exploring Kepler/TESS catalog with AI habitability predictions.</p>
+                        <div class="project-links" style="margin-top: auto; padding-top: 1.5rem;">
+                            <a href="https://github.com/umandathathsarani/exoplanet-explorer" target="_blank" rel="noopener noreferrer" class="btn primary-btn magnetic-btn" style="width: 100%; text-align: center;"><i class="devicon-github-original"></i> View Source</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card scale-in" style="transition-delay: 0.8s;" data-category="ml">
+                    <div class="project-image" style="background: url('assets/emotion_ai.png'); background-size: cover; background-position: center;"></div>
+                    <div class="project-info">
+                        <h3>Emotion AI Dashboard</h3>
+                        <p>Real-time face detection and emotion recognition dashboard built with OpenCV and DeepFace.</p>
+                        <div class="project-links" style="margin-top: auto; padding-top: 1.5rem;">
+                            <a href="https://github.com/umandathathsarani/emotion-ai-dashboard" target="_blank" rel="noopener noreferrer" class="btn primary-btn magnetic-btn" style="width: 100%; text-align: center;"><i class="devicon-github-original"></i> View Source</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card scale-in" style="transition-delay: 0.9s;" data-category="web">
+                    <div class="project-image" style="background: url('assets/fuel_assistance.png'); background-size: cover; background-position: center;"></div>
+                    <div class="project-info">
+                        <h3>Breakdown Fuel Assistance</h3>
+                        <p>Python-based platform facilitating emergency fuel delivery and breakdown assistance.</p>
+                        <div class="project-links" style="margin-top: auto; padding-top: 1.5rem;">
+                            <a href="https://github.com/umandathathsarani/breakdown-fuel-assistance" target="_blank" rel="noopener noreferrer" class="btn primary-btn magnetic-btn" style="width: 100%; text-align: center;"><i class="devicon-github-original"></i> View Source</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card scale-in" style="transition-delay: 0.1s;" data-category="web">
+                    <div class="project-image" style="background: url('assets/time_tracker.png'); background-size: cover; background-position: center;"></div>
+                    <div class="project-info">
+                        <h3>Time Tracker App</h3>
+                        <p>Modular front-end management app with Pomodoro tracker and theme toggler.</p>
+                        <div class="project-links" style="margin-top: auto; padding-top: 1.5rem;">
+                            <a href="https://github.com/umandathathsarani/time-tracker-app" target="_blank" rel="noopener noreferrer" class="btn primary-btn magnetic-btn" style="width: 100%; text-align: center;"><i class="devicon-github-original"></i> View Source</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card scale-in" style="transition-delay: 0.2s;" data-category="web">
+                    <div class="project-image" style="background: url('assets/reading_tracker_project.png'); background-size: cover; background-position: center;"></div>
+                    <div class="project-info">
+                        <h3>Reading Tracker Project</h3>
+                        <p>A full-stack reading list organizer built with Java, JavaScript, and MongoDB.</p>
+                        <div class="project-links" style="margin-top: auto; padding-top: 1.5rem;">
+                            <a href="https://github.com/umandathathsarani/reading-tracker-project" target="_blank" rel="noopener noreferrer" class="btn primary-btn magnetic-btn" style="width: 100%; text-align: center;"><i class="devicon-github-original"></i> View Source</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card scale-in" style="transition-delay: 0.3s;" data-category="ml">
+                    <div class="project-image" style="background: url('assets/video_downloader.png'); background-size: cover; background-position: center;"></div>
+                    <div class="project-info">
+                        <h3>AI Video Downloader</h3>
+                        <p>Automated video processing and downloading tool built in Python.</p>
+                        <div class="project-links" style="margin-top: auto; padding-top: 1.5rem;">
+                            <a href="https://github.com/umandathathsarani/ai-video-downloader" target="_blank" rel="noopener noreferrer" class="btn primary-btn magnetic-btn" style="width: 100%; text-align: center;"><i class="devicon-github-original"></i> View Source</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card scale-in" style="transition-delay: 0.4s;" data-category="games web">
+                    <div class="project-image" style="background: url('assets/stress_relief_hub_new.png'); background-size: cover; background-position: center;"></div>
+                    <div class="project-info">
+                        <h3>Stress Relief Hub</h3>
+                        <p>Modular web application featuring interactive mini-games designed for relaxation.</p>
+                        <div class="project-links" style="margin-top: auto; padding-top: 1.5rem;">
+                            <a href="https://github.com/umandathathsarani/stress-relief-hub" target="_blank" rel="noopener noreferrer" class="btn primary-btn magnetic-btn" style="width: 100%; text-align: center;"><i class="devicon-github-original"></i> View Source</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card scale-in" style="transition-delay: 0.5s;" data-category="games">
+                    <div class="project-image" style="background: url('assets/interactive_fiction.png'); background-size: cover; background-position: center;"></div>
+                    <div class="project-info">
+                        <h3>Interactive Fiction Engine</h3>
+                        <p>Python-based text engine for creating and playing interactive stories.</p>
+                        <div class="project-links" style="margin-top: auto; padding-top: 1.5rem;">
+                            <a href="https://github.com/umandathathsarani/interactive-fiction-engine" target="_blank" rel="noopener noreferrer" class="btn primary-btn magnetic-btn" style="width: 100%; text-align: center;"><i class="devicon-github-original"></i> View Source</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card scale-in" style="transition-delay: 0.6s;" data-category="ml">
+                    <div class="project-image" style="background: url('assets/voice_assistant.png'); background-size: cover; background-position: center;"></div>
+                    <div class="project-info">
+                        <h3>Voice Assistant</h3>
+                        <p>Python speech-to-text assistant capable of executing basic system commands.</p>
+                        <div class="project-links" style="margin-top: auto; padding-top: 1.5rem;">
+                            <a href="https://github.com/umandathathsarani/voice-assistant" target="_blank" rel="noopener noreferrer" class="btn primary-btn magnetic-btn" style="width: 100%; text-align: center;"><i class="devicon-github-original"></i> View Source</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card scale-in" style="transition-delay: 0.7s;" data-category="games ml">
+                    <div class="project-image" style="background: url('assets/tic_tac_toe.png'); background-size: cover; background-position: center;"></div>
+                    <div class="project-info">
+                        <h3>Tic Tac Toe AI</h3>
+                        <p>Unbeatable Tic Tac Toe implemented using the Minimax algorithm in Python.</p>
+                        <div class="project-links" style="margin-top: auto; padding-top: 1.5rem;">
+                            <a href="https://github.com/umandathathsarani/tic-tac-toe-ai" target="_blank" rel="noopener noreferrer" class="btn primary-btn magnetic-btn" style="width: 100%; text-align: center;"><i class="devicon-github-original"></i> View Source</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card scale-in" style="transition-delay: 0.8s;" data-category="ml">
+                    <div class="project-image" style="background: url('assets/plant_disease.png'); background-size: cover; background-position: center;"></div>
+                    <div class="project-info">
+                        <h3>Plant Disease Detection</h3>
+                        <p>Jupyter Notebook modeling for detecting agricultural diseases using computer vision.</p>
+                        <div class="project-links" style="margin-top: auto; padding-top: 1.5rem;">
+                            <a href="https://github.com/umandathathsarani/plant-disease-detection" target="_blank" rel="noopener noreferrer" class="btn primary-btn magnetic-btn" style="width: 100%; text-align: center;"><i class="devicon-github-original"></i> View Source</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card scale-in" style="transition-delay: 0.9s;" data-category="ml">
+                    <div class="project-image" style="background: url('assets/mnist_digit.png'); background-size: cover; background-position: center;"></div>
+                    <div class="project-info">
+                        <h3>MNIST Digit Recognizer</h3>
+                        <p>Handwritten digit recognition trained on the MNIST dataset.</p>
+                        <div class="project-links" style="margin-top: auto; padding-top: 1.5rem;">
+                            <a href="https://github.com/umandathathsarani/mnist-digit-recognizer" target="_blank" rel="noopener noreferrer" class="btn primary-btn magnetic-btn" style="width: 100%; text-align: center;"><i class="devicon-github-original"></i> View Source</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card scale-in" style="transition-delay: 0.1s;" data-category="ml web">
+                    <div class="project-image" style="background: url('assets/spam_web_app.png'); background-size: cover; background-position: center;"></div>
+                    <div class="project-info">
+                        <h3>Spam Classifier Web App</h3>
+                        <p>Web interface for testing the Spam/Ham NLP classification model.</p>
+                        <div class="project-links" style="margin-top: auto; padding-top: 1.5rem;">
+                            <a href="https://github.com/umandathathsarani/Spam-Classifier-Web-App" target="_blank" rel="noopener noreferrer" class="btn primary-btn magnetic-btn" style="width: 100%; text-align: center;"><i class="devicon-github-original"></i> View Source</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card scale-in" style="transition-delay: 0.2s;" data-category="web">
+                    <div class="project-image" style="background: url('assets/video_utility.png'); background-size: cover; background-position: center;"></div>
+                    <div class="project-info">
+                        <h3>Video Utility Platform</h3>
+                        <p>JavaScript-based platform for organizing and manipulating video content.</p>
+                        <div class="project-links" style="margin-top: auto; padding-top: 1.5rem;">
+                            <a href="https://github.com/umandathathsarani/video-utility-platform" target="_blank" rel="noopener noreferrer" class="btn primary-btn magnetic-btn" style="width: 100%; text-align: center;"><i class="devicon-github-original"></i> View Source</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card scale-in" style="transition-delay: 0.3s;" data-category="web">
+                    <div class="project-image" style="background: url('assets/simple_chatbot.png'); background-size: cover; background-position: center;"></div>
+                    <div class="project-info">
+                        <h3>Simple Chatbot</h3>
+                        <p>Rule-based HTML/JS chatbot interface for handling basic conversational queries.</p>
+                        <div class="project-links" style="margin-top: auto; padding-top: 1.5rem;">
+                            <a href="https://github.com/umandathathsarani/simple-chatbot" target="_blank" rel="noopener noreferrer" class="btn primary-btn magnetic-btn" style="width: 100%; text-align: center;"><i class="devicon-github-original"></i> View Source</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card scale-in" style="transition-delay: 0.4s;" data-category="games ml">
+                    <div class="project-image" style="background: url('assets/rps_ai.png'); background-size: cover; background-position: center;"></div>
+                    <div class="project-info">
+                        <h3>RPS AI Project</h3>
+                        <p>Rock Paper Scissors game built in Python featuring an intelligent AI opponent.</p>
+                        <div class="project-links" style="margin-top: auto; padding-top: 1.5rem;">
+                            <a href="https://github.com/umandathathsarani/rps_ai_project" target="_blank" rel="noopener noreferrer" class="btn primary-btn magnetic-btn" style="width: 100%; text-align: center;"><i class="devicon-github-original"></i> View Source</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card scale-in" style="transition-delay: 0.5s;" data-category="games web">
+                    <div class="project-image" style="background: url('assets/escape_room.png'); background-size: cover; background-position: center;"></div>
+                    <div class="project-info">
+                        <h3>Escape Room Project</h3>
+                        <p>JavaScript-based interactive puzzle and escape room mechanics.</p>
+                        <div class="project-links" style="margin-top: auto; padding-top: 1.5rem;">
+                            <a href="https://github.com/umandathathsarani/escape-room-project" target="_blank" rel="noopener noreferrer" class="btn primary-btn magnetic-btn" style="width: 100%; text-align: center;"><i class="devicon-github-original"></i> View Source</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card scale-in" style="transition-delay: 0.6s;" data-category="web">
+                    <div class="project-image" style="background: url('assets/reading_tracker.png'); background-size: cover; background-position: center;"></div>
+                    <div class="project-info">
+                        <h3>Reading Tracker</h3>
+                        <p>A deep-space themed interactive reading list application.</p>
+                        <div class="project-links" style="margin-top: auto; padding-top: 1.5rem;">
+                            <a href="https://github.com/umandathathsarani/reading-tracker" target="_blank" rel="noopener noreferrer" class="btn primary-btn magnetic-btn" style="width: 100%; text-align: center;"><i class="devicon-github-original"></i> View Source</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card scale-in" style="transition-delay: 0.7s;" data-category="web">
+                    <div class="project-image" style="background: url('assets/discrete_math.png'); background-size: cover; background-position: center;"></div>
+                    <div class="project-info">
+                        <h3>Discrete Math Website</h3>
+                        <p>Educational website covering discrete mathematics topics and resources.</p>
+                        <div class="project-links" style="margin-top: auto; padding-top: 1.5rem;">
+                            <a href="https://github.com/umandathathsarani/discrete-math-website" target="_blank" rel="noopener noreferrer" class="btn primary-btn magnetic-btn" style="width: 100%; text-align: center;"><i class="devicon-github-original"></i> View Source</a>
+                        </div>
+                    </div>
+                </div>
+
             </div>
         </section>
 
         <section id="contact" class="contact section-padding">
-            <div class="contact-box fade-in">
-                <h2>Let's build something <span class="gradient-text">together</span>.</h2>
-                <p>Feel free to reach out for collaborations or just a friendly hello!</p>
-                
-                <div class="contact-buttons fade-in" style="display: flex; flex-wrap: wrap; justify-content: center; gap: 1rem;">
             <h2 class="section-title fade-in">Get In <span class="gradient-text">Touch</span></h2>
             
-            <div class="contact-grid">
-                <!-- Contact Form (Left) -->
-                <div class="contact-left fade-in">
-                    <div class="glass-panel" style="padding: 3rem;">
-                        <h3 style="margin-bottom: 2rem; color: var(--text-primary); font-size: 1.5rem;">Send a Message</h3>
-                        <form class="contact-form">
-                            <div class="form-group">
-                                <label for="name">Name</label>
-                                <input type="text" id="name" placeholder="John Doe" required>
+            <div class="fade-in" style="max-width: 600px; margin: 0 auto;">
+                <div class="glass-panel" style="padding: 3rem; text-align: center;">
+                    <h3 style="margin-bottom: 1.5rem; color: var(--text-primary); font-size: 1.5rem;">Let's build something <span class="gradient-text">together</span>.</h3>
+                    <p style="color: var(--text-muted); margin-bottom: 2.5rem; line-height: 1.6;">I'm currently looking for new opportunities and my inbox is always open. Whether you have a question or just want to say hi, I'll try my best to get back to you!</p>
+                    
+                    <div class="contact-info-list" style="display: grid; gap: 1rem; text-align: left; margin-bottom: 2.5rem;">
+                        <a href="mailto:umathathsarani2003@gmail.com" class="info-item glow-border" style="padding: 1.2rem; background: rgba(255,255,255,0.02); border-radius: 12px; border: 1px solid var(--border-color); display: flex; align-items: center; gap: 1.5rem; text-decoration: none;">
+                            <div class="info-icon" style="font-size: 2rem;"><i class="devicon-google-plain colored"></i></div>
+                            <div>
+                                <h4 style="color: var(--text-primary); margin-bottom: 0.2rem; font-size: 1.1rem;">Email</h4>
+                                <p style="color: var(--text-muted); font-size: 0.9rem;">umathathsarani2003@gmail.com</p>
                             </div>
-                            <div class="form-group">
-                                <label for="email">Email</label>
-                                <input type="email" id="email" placeholder="john@example.com" required>
+                        </a>
+                        <a href="https://github.com/umandathathsarani" target="_blank" rel="noopener noreferrer" class="info-item glow-border" style="padding: 1.2rem; background: rgba(255,255,255,0.02); border-radius: 12px; border: 1px solid var(--border-color); display: flex; align-items: center; gap: 1.5rem; text-decoration: none;">
+                            <div class="info-icon" style="font-size: 2rem;"><i class="devicon-github-original" style="color: var(--text-primary);"></i></div>
+                            <div>
+                                <h4 style="color: var(--text-primary); margin-bottom: 0.2rem; font-size: 1.1rem;">GitHub</h4>
+                                <p style="color: var(--text-muted); font-size: 0.9rem;">@umandathathsarani</p>
                             </div>
-                            <div class="form-group">
-                                <label for="message">Message</label>
-                                <textarea id="message" rows="5" placeholder="Your message here..." required></textarea>
+                        </a>
+                        <a href="https://linkedin.com/in/umandathathsarani" target="_blank" rel="noopener noreferrer" class="info-item glow-border" style="padding: 1.2rem; background: rgba(255,255,255,0.02); border-radius: 12px; border: 1px solid var(--border-color); display: flex; align-items: center; gap: 1.5rem; text-decoration: none;">
+                            <div class="info-icon" style="font-size: 2rem;"><i class="devicon-linkedin-plain colored"></i></div>
+                            <div>
+                                <h4 style="color: var(--text-primary); margin-bottom: 0.2rem; font-size: 1.1rem;">LinkedIn</h4>
+                                <p style="color: var(--text-muted); font-size: 0.9rem;">Umanda Thathsarani</p>
                             </div>
-                            <button type="submit" class="btn primary-btn glow-border" style="width: 100%; margin-top: 1rem;">Send Message</button>
-                        </form>
-                    </div>
-                </div>
-                
-                <!-- Contact Info (Right) -->
-                <div class="contact-right fade-in" style="transition-delay: 0.2s;">
-                    <div class="glass-panel" style="padding: 3rem; height: 100%; display: flex; flex-direction: column; justify-content: center;">
-                        <h3 style="margin-bottom: 2rem; color: var(--text-primary); font-size: 1.5rem;">Connect With Me</h3>
-                        
-                        <div class="contact-info-list">
-                            <a href="mailto:umathathsarani2003@gmail.com" class="info-item">
-                                <div class="info-icon"><i class="devicon-google-plain colored"></i></div>
-                                <div>
-                                    <h4>Email</h4>
-                                    <p>umathathsarani2003@gmail.com</p>
-                                </div>
-                            </a>
-                            <a href="https://github.com/umandathathsarani" target="_blank" class="info-item">
-                                <div class="info-icon"><i class="devicon-github-original colored"></i></div>
-                                <div>
-                                    <h4>GitHub</h4>
-                                    <p>@umandathathsarani</p>
-                                </div>
-                            </a>
-                            <a href="https://linkedin.com/in/umandathathsarani" target="_blank" class="info-item">
-                                <div class="info-icon"><i class="devicon-linkedin-plain colored"></i></div>
-                                <div>
-                                    <h4>LinkedIn</h4>
-                                    <p>Umanda Thathsarani</p>
-                                </div>
-                            </a>
-                            <div class="info-item">
-                                <div class="info-icon" style="color: var(--accent-2); font-size: 1.5rem;">📍</div>
-                                <div>
-                                    <h4>Location</h4>
-                                    <p>Sri Lanka</p>
-                                </div>
+                        </a>
+                        <div class="info-item" style="padding: 1.2rem; background: rgba(255,255,255,0.02); border-radius: 12px; border: 1px solid var(--border-color); display: flex; align-items: center; gap: 1.5rem;">
+                            <div class="info-icon" style="color: var(--accent-2); font-size: 1.8rem;">📍</div>
+                            <div>
+                                <h4 style="color: var(--text-primary); margin-bottom: 0.2rem; font-size: 1.1rem;">Location</h4>
+                                <p style="color: var(--text-muted); font-size: 0.9rem;">Sri Lanka</p>
                             </div>
                         </div>
+                        <a href="https://instagram.com/umandathathsarani" target="_blank" rel="noopener noreferrer" class="info-item glow-border" style="padding: 1.2rem; background: rgba(255,255,255,0.02); border-radius: 12px; border: 1px solid var(--border-color); display: flex; align-items: center; gap: 1.5rem; text-decoration: none;">
+                            <div class="info-icon" style="color: #E1306C; font-size: 1.8rem;">
+                                <svg viewBox="0 0 24 24" fill="currentColor" width="28" height="28" style="vertical-align: middle;"><path d="M7.75 2h8.5A5.75 5.75 0 0 1 22 7.75v8.5A5.75 5.75 0 0 1 16.25 22h-8.5A5.75 5.75 0 0 1 2 16.25v-8.5A5.75 5.75 0 0 1 7.75 2zm0 1.5A4.25 4.25 0 0 0 3.5 7.75v8.5A4.25 4.25 0 0 0 7.75 20.5h8.5a4.25 4.25 0 0 0 4.25-4.25v-8.5A4.25 4.25 0 0 0 16.25 3.5h-8.5zM12 7.25A4.75 4.75 0 1 1 12 16.75 4.75 4.75 0 0 1 12 7.25zm0 1.5a3.25 3.25 0 1 0 0 6.5 3.25 3.25 0 0 0 0-6.5zm5.25-2a1.25 1.25 0 1 1 0 2.5 1.25 1.25 0 0 1 0-2.5z"/></svg>
+                            </div>
+                            <div>
+                                <h4 style="color: var(--text-primary); margin-bottom: 0.2rem; font-size: 1.1rem;">Instagram</h4>
+                                <p style="color: var(--text-muted); font-size: 0.9rem;">@umandathathsarani</p>
+                            </div>
+                        </a>
+                    </div>
 
-                        <div style="margin-top: 3rem;">
-                            <a href="#" class="btn secondary-btn" style="width: 100%; text-align: center;"><i class="devicon-bash-plain"></i> Download Resume</a>
-                        </div>
-                    </div>
+                    <a href="#" class="btn secondary-btn" style="width: 100%; text-align: center;"><i class="devicon-bash-plain"></i> View & Download Resume</a>
                 </div>
             </div>
         </section>
     </main>
 
-    <footer class="site-footer">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+    <footer class="site-footer" style="padding: 4rem 2rem 2rem; margin-top: 4rem; border-top: 1px solid var(--border-color); background: rgba(5,5,5,0.8); backdrop-filter: blur(10px);">
+        <div style="max-width: 1200px; margin: 0 auto; display: flex; flex-direction: column; align-items: center; gap: 2rem;">
+            <div style="text-align: center;">
+                <h2 style="font-size: 2rem; font-weight: 700; color: #fff; margin-bottom: 0.5rem;">Umanda Thathsarani</h2>
+                <p style="color: var(--text-muted); font-size: 1rem; max-width: 400px; margin: 0 auto;">Innovating at the intersection of AI, Machine Learning, and Full-Stack Development.</p>
+            </div>
+            
+            <div style="display: flex; gap: 1.5rem; margin-top: 1rem;">
+                <a href="https://github.com/umandathathsarani" target="_blank" style="color: var(--text-muted); transition: color 0.3s;" onmouseover="this.style.color='#8B5CF6'" onmouseout="this.style.color='var(--text-muted)'"><i class="devicon-github-original" style="font-size: 1.8rem;"></i></a>
+                <a href="https://linkedin.com/in/umandathathsarani" target="_blank" style="color: var(--text-muted); transition: color 0.3s;" onmouseover="this.style.color='#8B5CF6'" onmouseout="this.style.color='var(--text-muted)'"><i class="devicon-linkedin-plain" style="font-size: 1.8rem;"></i></a>
+                <a href="https://instagram.com/umandathathsarani" target="_blank" style="color: var(--text-muted); transition: color 0.3s;" onmouseover="this.style.color='#8B5CF6'" onmouseout="this.style.color='var(--text-muted)'">
+                    <svg viewBox="0 0 24 24" fill="currentColor" width="28" height="28" style="vertical-align: middle; margin-top: -4px;"><path d="M7.75 2h8.5A5.75 5.75 0 0 1 22 7.75v8.5A5.75 5.75 0 0 1 16.25 22h-8.5A5.75 5.75 0 0 1 2 16.25v-8.5A5.75 5.75 0 0 1 7.75 2zm0 1.5A4.25 4.25 0 0 0 3.5 7.75v8.5A4.25 4.25 0 0 0 7.75 20.5h8.5a4.25 4.25 0 0 0 4.25-4.25v-8.5A4.25 4.25 0 0 0 16.25 3.5h-8.5zM12 7.25A4.75 4.75 0 1 1 12 16.75 4.75 4.75 0 0 1 12 7.25zm0 1.5a3.25 3.25 0 1 0 0 6.5 3.25 3.25 0 0 0 0-6.5zm5.25-2a1.25 1.25 0 1 1 0 2.5 1.25 1.25 0 0 1 0-2.5z"/></svg>
                 </a>
             </div>
-            <p>&copy; 2026 Umanda Thathsarani. Built with passion.</p>
+
+            <div style="width: 100%; height: 1px; background: var(--border-color); margin: 1rem 0;"></div>
+            
+            <p style="color: var(--text-muted); font-size: 0.9rem;">&copy; 2026 Umanda Thathsarani. Built with passion & precision.</p>
         </div>
     </footer>
 
