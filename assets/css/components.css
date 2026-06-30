@@ -40,75 +40,52 @@
 
 /* Sections */
 .hero {
-    min-height: 100vh;
+    height: 100vh;
     display: flex;
     align-items: center;
-    padding: 100px 10%;
+    padding: 0 10%;
     position: relative;
     overflow: hidden;
-    gap: 4rem;
-    flex-wrap: wrap;
 }
-.hero-content-left {
-    flex: 1;
-    min-width: 300px;
+.hero-content {
+    max-width: 800px;
     z-index: 2;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-.hero-content-right {
-    flex: 1;
-    min-width: 300px;
-    z-index: 2;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.hero-badge {
-    display: inline-block;
-    padding: 8px 20px;
-    border-radius: 20px;
-    background: rgba(110, 86, 255, 0.1);
-    border: 1px solid var(--accent-1);
-    color: var(--text-primary);
-    font-size: 0.9rem;
-    font-weight: 600;
-    margin-bottom: 1.5rem;
-    width: fit-content;
 }
 .hero h1 {
     font-size: 4.5rem;
     line-height: 1.1;
-    margin-bottom: 1rem;
+    margin-bottom: 1.5rem;
 }
 .hero .subtitle {
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     color: var(--text-secondary);
-    margin-bottom: 1.5rem;
-    line-height: 1.6;
-}
-.hero .highlight {
-    color: var(--accent-1);
-    font-weight: 600;
-}
-.hero .bio {
-    font-size: 1.1rem;
-    color: var(--text-secondary);
-    margin-bottom: 2.5rem;
-    max-width: 90%;
+    margin-bottom: 3rem;
 }
 .hero-buttons {
     display: flex;
     gap: 1.5rem;
-    flex-wrap: wrap;
 }
 
 @media (max-width: 768px) {
-    .hero { text-align: center; gap: 2rem; padding-top: 150px; }
-    .hero-content-left { align-items: center; }
-    .hero .bio { max-width: 100%; }
-    .hero h1 { font-size: 3.5rem; }
+    .hero h1 { font-size: 3rem; }
+    .hero .subtitle { font-size: 1.2rem; }
+}
+
+.about-content {
+    background: var(--surface-color);
+    padding: 4rem;
+    border-radius: 20px;
+    border: 1px solid var(--border-color);
+    text-align: center;
+    max-width: 900px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 2;
+}
+.about-content p {
+    font-size: 1.2rem;
+    color: var(--text-secondary);
+    margin-bottom: 3rem;
 }
 
 /* Projects */

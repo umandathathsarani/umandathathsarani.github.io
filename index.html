@@ -25,33 +25,6 @@
         <ul class="nav-links">
             <li><a href="#home">Home</a></li>
             <li><a href="#about">About</a></li>
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Umanda Thathsarani | Portfolio</title>
-    <meta name="description" content="Personal portfolio of Umanda Thathsarani, a passionate developer building modern web applications.">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
-    <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <!-- Ambient Animations -->
-    <div id="particles-js"></div>
-    <div class="ambient-orbs">
-        <div class="orb orb-1"></div>
-        <div class="orb orb-2"></div>
-    </div>
-
-    <nav class="navbar">
-        <div class="logo">UT<span>.</span></div>
-        <ul class="nav-links">
-            <li><a href="#home">Home</a></li>
-            <li><a href="#education">Education</a></li>
             <li><a href="#projects">Projects</a></li>
             <li><a href="#contact">Contact</a></li>
         </ul>
@@ -63,22 +36,31 @@
             </div>
         </div>
     </nav>
+
     <main>
         <section id="home" class="hero">
-            <div class="hero-content-left fade-in">
-                <div class="hero-badge">💎 AI Engineer & ML Researcher</div>
-                <h1>Hi, I am <span class="gradient-text">Umanda</span></h1>
-                <p class="subtitle">Bachelor of Science Honours in Information Technology<br><span class="highlight">Specialized in Artificial Intelligence</span></p>
-                <p class="bio">I specialize in building intelligent, scalable machine learning systems and deploying them via responsive web and mobile applications.</p>
+            <div class="hero-content fade-in">
+                <h1>Hi, I'm <span class="gradient-text">Umanda Thathsarani</span></h1>
+                <p class="subtitle">I build interactive, responsive, and beautiful digital experiences.</p>
                 <div class="hero-buttons">
                     <a href="#projects" class="btn primary-btn">View My Work</a>
                     <a href="#contact" class="btn secondary-btn">Get In Touch</a>
                 </div>
             </div>
-            
-            <div class="hero-content-right fade-in" style="transition-delay: 0.2s;">
+            <div class="hero-shapes">
+                <div class="shape shape-1"></div>
+                <div class="shape shape-2"></div>
+            </div>
+        </section>
+
+        <section id="about" class="about section-padding">
+            <h2 class="section-title fade-in">About <span class="gradient-text">Me</span></h2>
+            <div class="about-content fade-in slide-in-bottom">
+                <p>Hello! I am <strong>Umanda Thathsarani</strong>, a passionate <span class="highlight">AI Engineer and ML Researcher</span> based in Sri Lanka.</p>
+                <p>I specialize in building intelligent, scalable machine learning systems and deploying them via responsive web and mobile applications.</p>
+                <p>Bachelor of Science Honours in Information Technology<br><br><span style="color: var(--accent-1); font-weight: 600;">Specialized in Artificial Intelligence</span></p>
+                
                 <div class="tech-orbit-container">
-                    <div class="tech-orbit outer"></div>
                     <div class="tech-orbit">
                         <div class="orbit-center"><i class="devicon-python-plain"></i></div>
                         <div class="orbit-ring">
@@ -93,12 +75,6 @@
                         </div>
                     </div>
                 </div>
-            </div>
-
-            <!-- Keep the abstract shapes -->
-            <div class="hero-shapes">
-                <div class="shape shape-1"></div>
-                <div class="shape shape-2"></div>
             </div>
         </section>
 
@@ -159,7 +135,6 @@ EWF!I2DB0-_G(-:&J,/M&{#]SDP5T@Y&079DZ>Z}(1X$5 30]_5(
             </div>
 
             <div class="project-grid">
-                <!-- Project Card 1 -->
                 <div class="project-card scale-in" data-category="web">
                     <div class="project-image" style="background: url('assets/stress_relief_hub.png');"></div>
                     <div class="project-info">
@@ -168,7 +143,6 @@ EWF!I2DB0-_G(-:&J,/M&{#]SDP5T@Y&079DZ>Z}(1X$5 30]_5(
                         <a href="https://umandathathsarani.github.io/stress-relief-hub/" target="_blank" rel="noopener noreferrer" class="project-link">View Live Demo &rarr;</a>
                     </div>
                 </div>
-                <!-- Project Card 2 -->
                 <div class="project-card scale-in" style="transition-delay: 0.2s;" data-category="games">
                     <div class="project-image" style="background: url('assets/cyberpunk_hacker.png');"></div>
                     <div class="project-info">
@@ -177,7 +151,6 @@ EWF!I2DB0-_G(-:&J,/M&{#]SDP5T@Y&079DZ>Z}(1X$5 30]_5(
                         <a href="https://github.com/umandathathsarani/cyberpunk-hacker-escape" target="_blank" rel="noopener noreferrer" class="project-link">View on GitHub &rarr;</a>
                     </div>
                 </div>
-                <!-- Project Card 3 -->
                 <div class="project-card scale-in" style="transition-delay: 0.4s;" data-category="games">
                     <div class="project-image" style="background: url('assets/midnight_mansion.png');"></div>
                     <div class="project-info">
@@ -186,7 +159,6 @@ EWF!I2DB0-_G(-:&J,/M&{#]SDP5T@Y&079DZ>Z}(1X$5 30]_5(
                         <a href="https://github.com/umandathathsarani/umanda-escape-room" target="_blank" rel="noopener noreferrer" class="project-link">View on GitHub &rarr;</a>
                     </div>
                 </div>
-                <!-- Project Card 4 -->
                 <div class="project-card scale-in" style="transition-delay: 0.6s;" data-category="ml">
                     <div class="project-image" style="background: url('assets/cat_breed_ai.png');"></div>
                     <div class="project-info">
@@ -195,7 +167,6 @@ EWF!I2DB0-_G(-:&J,/M&{#]SDP5T@Y&079DZ>Z}(1X$5 30]_5(
                         <a href="https://github.com/umandathathsarani/Cat-Breed-Identifier-AI" class="project-link" target="_blank" rel="noopener noreferrer">View on GitHub &rarr;</a>
                     </div>
                 </div>
-                <!-- Project Card 5 -->
                 <div class="project-card scale-in" style="transition-delay: 0.8s;" data-category="ml">
                     <div class="project-image" style="background: url('assets/face_mask_detector.png');"></div>
                     <div class="project-info">
@@ -204,7 +175,6 @@ EWF!I2DB0-_G(-:&J,/M&{#]SDP5T@Y&079DZ>Z}(1X$5 30]_5(
                         <a href="https://github.com/umandathathsarani/Face-Mask-Detector" class="project-link" target="_blank" rel="noopener noreferrer">View on GitHub &rarr;</a>
                     </div>
                 </div>
-                <!-- Project Card 6 -->
                 <div class="project-card scale-in" style="transition-delay: 1.0s;" data-category="ml">
                     <div class="project-image" style="background: url('assets/spam_classifier.png');"></div>
                     <div class="project-info">
@@ -239,6 +209,7 @@ EWF!I2DB0-_G(-:&J,/M&{#]SDP5T@Y&079DZ>Z}(1X$5 30]_5(
             </div>
         </section>
     </main>
+
     <footer class="site-footer">
         <div class="footer-content">
             <div class="footer-logo">UT<span>.</span></div>
@@ -257,7 +228,6 @@ EWF!I2DB0-_G(-:&J,/M&{#]SDP5T@Y&079DZ>Z}(1X$5 30]_5(
         </div>
     </footer>
 
-    <div id="tsparticles"></div>
     <script src="https://cdn.jsdelivr.net/npm/tsparticles@2.11.0/tsparticles.bundle.min.js"></script>
     <script src="assets/js/main.js"></script>
     <script src="assets/js/filtering.js"></script>

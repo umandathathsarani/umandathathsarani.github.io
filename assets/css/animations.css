@@ -23,35 +23,24 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    position: relative;
-    width: 400px;
-    height: 400px;
-}
-.tech-orbit.outer {
-    position: absolute;
-    width: 350px;
-    height: 350px;
-    border-radius: 50%;
-    border: 1px dashed rgba(255, 255, 255, 0.05);
-    z-index: 0;
+    margin-top: 3rem;
+    height: 300px;
 }
 .tech-orbit {
-    position: absolute;
-    width: 280px;
-    height: 280px;
+    position: relative;
+    width: 250px;
+    height: 250px;
     border-radius: 50%;
-    border: 1px solid rgba(255, 255, 255, 0.1);
-    animation: rotateOrbit 25s linear infinite;
+    border: 1px dashed var(--border-color);
+    animation: rotateOrbit 20s linear infinite;
     display: flex;
     justify-content: center;
     align-items: center;
-    z-index: 1;
 }
 .orbit-center {
-    font-size: 4.5rem;
+    font-size: 3.5rem;
     color: var(--accent-1);
-    animation: rotateOrbitReverse 25s linear infinite;
-    filter: drop-shadow(0 0 20px rgba(110, 86, 255, 0.5));
+    animation: rotateOrbitReverse 20s linear infinite;
 }
 .orbit-ring {
     position: absolute;
@@ -60,30 +49,25 @@
 }
 .orbit-item {
     position: absolute;
-    top: -25px;
+    top: -20px;
     left: 50%;
-    width: 50px;
-    height: 50px;
-    margin-left: -25px;
+    width: 40px;
+    height: 40px;
+    margin-left: -20px;
     background: var(--surface-color);
     border: 1px solid var(--border-color-hover);
-    border-radius: 12px;
+    border-radius: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 1.8rem;
+    font-size: 1.5rem;
     color: var(--text-primary);
-    transform-origin: 25px 165px;
+    transform-origin: 20px 145px;
     transform: rotate(calc(360deg / 8 * var(--i)));
-    box-shadow: 0 5px 15px rgba(0,0,0,0.5);
-    transition: transform 0.3s ease, background 0.3s ease;
-}
-.orbit-item:hover {
-    background: var(--accent-1);
 }
 .orbit-item i {
     transform: rotate(calc(-360deg / 8 * var(--i)));
-    animation: rotateOrbitReverse 25s linear infinite;
+    animation: rotateOrbitReverse 20s linear infinite;
 }
 
 @keyframes rotateOrbit {
