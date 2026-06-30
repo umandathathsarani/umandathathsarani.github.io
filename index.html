@@ -8,6 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
     <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
     <link rel="stylesheet" href="style.css">
 </head>
@@ -49,28 +50,73 @@
         </section>
         <section id="about" class="about section-padding">
             <h2 class="section-title fade-in">About <span class="gradient-text">Me</span></h2>
-            <div class="about-content fade-in">
-                <p>I am an aspiring <strong>AI Engineer and ML Researcher</strong> with a strong foundation in full-stack development. I am deeply passionate about pushing the boundaries of what machines can learn and how they perceive the world. My goal is to build highly scalable, intelligent systems—from training deep neural networks and deploying edge computer vision models to building robust backend pipelines.</p>
-                <div class="skills">
-                    <span class="skill-tag">Python</span>
-                    <span class="skill-tag">PyTorch</span>
-                    <span class="skill-tag">TensorFlow</span>
-                    <span class="skill-tag">OpenCV</span>
-                    <span class="skill-tag">FastAPI</span>
-                    <span class="skill-tag">Node.js</span>
-                    <span class="skill-tag">React</span>
-                    <span class="skill-tag">TypeScript</span>
-                    <span class="skill-tag">PostgreSQL</span>
-                    <span class="skill-tag">Docker</span>
-                    <span class="skill-tag">AWS</span>
+            <div class="about-content fade-in slide-in-bottom">
+                <p>Hello! I am <strong>Umanda Thathsarani</strong>, a passionate <span class="highlight">AI Engineer and ML Researcher</span> based in Sri Lanka.</p>
+                <p>I specialize in building intelligent, scalable machine learning systems and deploying them via responsive web and mobile applications.</p>
+                <p>Currently pursuing a BSc (Hons) in Information Technology at SLIIT.</p>
+                
+                <div class="tech-orbit-container">
+                    <div class="tech-orbit">
+                        <div class="orbit-center"><i class="devicon-python-plain"></i></div>
+                        <div class="orbit-ring">
+                            <div class="orbit-item" style="--i:1;"><i class="devicon-pytorch-original"></i></div>
+                            <div class="orbit-item" style="--i:2;"><i class="devicon-tensorflow-original"></i></div>
+                            <div class="orbit-item" style="--i:3;"><i class="devicon-react-original"></i></div>
+                            <div class="orbit-item" style="--i:4;"><i class="devicon-docker-plain"></i></div>
+                            <div class="orbit-item" style="--i:5;"><i class="devicon-amazonwebservices-original"></i></div>
+                            <div class="orbit-item" style="--i:6;"><i class="devicon-javascript-plain"></i></div>
+                            <div class="orbit-item" style="--i:7;"><i class="devicon-fastapi-plain"></i></div>
+                            <div class="orbit-item" style="--i:8;"><i class="devicon-git-plain"></i></div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
+
+        <section id="timeline" class="timeline section-padding">
+            <h2 class="section-title fade-in">Experience & <span class="gradient-text">Education</span></h2>
+            
+            <div class="timeline-container">
+                <div class="timeline-item left fade-in">
+                    <div class="timeline-content">
+                        <h3>BSc (Hons) Information Technology</h3>
+                        <h4>SLIIT</h4>
+                        <p class="timeline-date">2023 - Present</p>
+                        <p>Specializing in Artificial Intelligence. Currently in my 3rd Year, focusing on deep learning, computer vision, and scalable ML systems.</p>
+                    </div>
+                </div>
+                <div class="timeline-item right fade-in" style="transition-delay: 0.2s;">
+                    <div class="timeline-content">
+                        <h3>Machine Learning Researcher</h3>
+                        <h4>Self-Directed</h4>
+                        <p class="timeline-date">2024 - Present</p>
+                        <p>Developing end-to-end MLOps pipelines and deploying deep neural networks to edge devices and mobile applications.</p>
+                    </div>
+                </div>
+                <div class="timeline-item left fade-in" style="transition-delay: 0.4s;">
+                    <div class="timeline-content">
+                        <h3>Full-Stack Developer</h3>
+                        <h4>Freelance / Projects</h4>
+                        <p class="timeline-date">2023 - 2024</p>
+                        <p>Built responsive web applications, interactive escape room games, and RESTful APIs utilizing modern frameworks like React and Node.js.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
         <section id="projects" class="projects section-padding">
             <h2 class="section-title fade-in">Featured <span class="gradient-text">Projects</span></h2>
+            
+            <div class="project-filters fade-in">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="ml">Machine Learning</button>
+                <button class="filter-btn" data-filter="web">Web App</button>
+                <button class="filter-btn" data-filter="games">Games</button>
+            </div>
+
             <div class="project-grid">
                 <!-- Project Card 1 -->
-                <div class="project-card scale-in">
+                <div class="project-card scale-in" data-category="web">
                     <div class="project-image" style="background: url('assets/stress_relief_hub.png');"></div>
                     <div class="project-info">
                         <h3>Stress Relief Hub</h3>
@@ -79,7 +125,7 @@
                     </div>
                 </div>
                 <!-- Project Card 2 -->
-                <div class="project-card scale-in" style="transition-delay: 0.2s;">
+                <div class="project-card scale-in" style="transition-delay: 0.2s;" data-category="games">
                     <div class="project-image" style="background: url('assets/cyberpunk_hacker.png');"></div>
                     <div class="project-info">
                         <h3>Cyberpunk Hacker Escape</h3>
@@ -88,7 +134,7 @@
                     </div>
                 </div>
                 <!-- Project Card 3 -->
-                <div class="project-card scale-in" style="transition-delay: 0.4s;">
+                <div class="project-card scale-in" style="transition-delay: 0.4s;" data-category="games">
                     <div class="project-image" style="background: url('assets/midnight_mansion.png');"></div>
                     <div class="project-info">
                         <h3>The Midnight Mansion</h3>
@@ -97,7 +143,7 @@
                     </div>
                 </div>
                 <!-- Project Card 4 -->
-                <div class="project-card scale-in" style="transition-delay: 0.6s;">
+                <div class="project-card scale-in" style="transition-delay: 0.6s;" data-category="ml">
                     <div class="project-image" style="background: url('assets/cat_breed_ai.png');"></div>
                     <div class="project-info">
                         <h3>Cat Breed Identifier AI</h3>
@@ -106,7 +152,7 @@
                     </div>
                 </div>
                 <!-- Project Card 5 -->
-                <div class="project-card scale-in" style="transition-delay: 0.8s;">
+                <div class="project-card scale-in" style="transition-delay: 0.8s;" data-category="ml">
                     <div class="project-image" style="background: url('assets/face_mask_detector.png');"></div>
                     <div class="project-info">
                         <h3>Face Mask Detector</h3>
@@ -115,7 +161,7 @@
                     </div>
                 </div>
                 <!-- Project Card 6 -->
-                <div class="project-card scale-in" style="transition-delay: 1.0s;">
+                <div class="project-card scale-in" style="transition-delay: 1.0s;" data-category="ml">
                     <div class="project-image" style="background: url('assets/spam_classifier.png');"></div>
                     <div class="project-info">
                         <h3>Spam Email Classifier</h3>
@@ -125,6 +171,29 @@
                 </div>
             </div>
         </section>
+
+        <section id="certifications" class="certifications section-padding">
+            <h2 class="section-title fade-in">Licenses & <span class="gradient-text">Certifications</span></h2>
+            <div class="project-grid" style="grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));">
+                <!-- Cert 1 -->
+                <div class="project-card scale-in">
+                    <div class="project-info" style="padding: 2.5rem;">
+                        <h3 style="margin-bottom: 0.5rem;">AI/ML Engineer - Stage 1</h3>
+                        <p style="color: var(--accent-2); margin-bottom: 1.5rem; font-size: 0.95rem; font-weight: 600;">SLIIT &bull; 2024</p>
+                        <p>Completed foundational learning in artificial intelligence and machine learning concepts through SLIIT CGSS.</p>
+                    </div>
+                </div>
+                <!-- Cert 2 -->
+                <div class="project-card scale-in" style="transition-delay: 0.2s;">
+                    <div class="project-info" style="padding: 2.5rem;">
+                        <h3 style="margin-bottom: 0.5rem;">Python for Beginners</h3>
+                        <p style="color: var(--accent-2); margin-bottom: 1.5rem; font-size: 0.95rem; font-weight: 600;">University of Moratuwa &bull; 2023</p>
+                        <p>Completed beginner-level Python programming training focused on programming logic and practical coding.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
         <section id="contact" class="contact section-padding">
             <div class="contact-box fade-in">
                 <h2>Let's build something <span class="gradient-text">together</span>.</h2>
