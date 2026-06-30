@@ -43,7 +43,7 @@
     min-height: 100vh;
     display: flex;
     align-items: center;
-    padding: 100px 10%;
+    padding: 180px 10% 100px;
     position: relative;
     overflow: hidden;
     gap: 4rem;
@@ -159,10 +159,14 @@
 }
 .icon-1 { top: -20px; right: -20px; animation-delay: 0s; }
 .icon-2 { bottom: 40px; left: -30px; animation-delay: 2s; }
-.icon-3 { top: 50%; right: -40px; animation-delay: 4s; }
+.icon-3 { top: 40%; right: -50px; animation-delay: 4s; }
+.icon-4 { top: 20%; left: -40px; animation-delay: 1s; }
+.icon-5 { bottom: 10px; right: 40px; animation-delay: 3s; }
+.icon-6 { top: -30px; left: 40%; animation-delay: 5s; }
+
 
 @media (max-width: 768px) {
-    .hero { padding-top: 150px; text-align: center; }
+    .hero { padding-top: 180px; text-align: center; padding-bottom: 60px; }
     .hero-content-left { align-items: center; }
     .hero h1 { font-size: 3rem; }
     .hero .subtitle { font-size: 1.2rem; }
@@ -203,32 +207,22 @@
 /* Horizontal Timeline */
 .timeline {
     position: relative;
-    max-width: 1000px;
+    width: 100%;
     margin: 0 auto;
     display: flex;
-    overflow-x: auto;
-    padding: 6rem 1rem;
-    gap: 2.5rem;
+    justify-content: center;
+    padding: 4rem 1rem;
+    gap: 3rem;
     align-items: center;
-    scroll-snap-type: x mandatory;
-    scrollbar-width: thin;
-    scrollbar-color: var(--accent-1) transparent;
     
     /* Horizontal gradient line */
     background-image: linear-gradient(90deg, var(--accent-1), var(--accent-2));
-    background-size: 5000px 4px;
+    background-size: 100% 4px;
     background-repeat: no-repeat;
     background-position: left center;
-    background-attachment: local;
 }
 
-.timeline::-webkit-scrollbar {
-    height: 8px;
-}
-.timeline::-webkit-scrollbar-thumb {
-    background: var(--accent-1);
-    border-radius: 4px;
-}
+
 
 .timeline-item {
     width: 320px;
@@ -247,6 +241,15 @@
 .timeline-item.right {
     transform: translateY(50%);
     padding-top: 40px;
+}
+
+@media (max-width: 1100px) {
+    .timeline {
+        overflow-x: auto;
+        justify-content: flex-start;
+        padding-left: 5vw;
+        padding-right: 5vw;
+    }
 }
 
 /* Dots positioned on the horizontal line */
@@ -385,13 +388,15 @@
 
 /* Contact */
 .interest-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     gap: 2rem;
     position: relative;
     z-index: 2;
 }
 .interest-card {
+    width: 280px;
     padding: 2rem;
     text-align: center;
     display: flex;
@@ -584,13 +589,16 @@
     border-color: var(--accent-1);
 }
 .project-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     gap: 2.5rem;
     position: relative;
     z-index: 2;
 }
 .project-card {
+    flex: 1 1 320px;
+    max-width: 400px;
     border-radius: 15px;
     overflow: hidden;
     display: flex;
@@ -836,4 +844,73 @@
 }
 @media (max-width: 900px) {
     .contact-grid { grid-template-columns: 1fr; }
+}
+
+/* Scroll to Top Button */
+.scroll-top-btn {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, var(--accent-1), var(--accent-2));
+    color: white;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(20px);
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    box-shadow: 0 4px 15px rgba(168, 85, 247, 0.4);
+}
+.scroll-top-btn.visible {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+.scroll-top-btn:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(168, 85, 247, 0.6);
+}
+.scroll-top-btn svg {
+    width: 24px;
+    height: 24px;
+}
+
+/* Scroll Down Button */
+.scroll-down-btn {
+    position: absolute;
+    bottom: 40px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, var(--accent-1), var(--accent-2));
+    color: white;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    box-shadow: 0 4px 15px rgba(168, 85, 247, 0.4);
+    animation: bounceDown 2s infinite;
+}
+.scroll-down-btn:hover {
+    box-shadow: 0 8px 25px rgba(168, 85, 247, 0.6);
+}
+.scroll-down-btn svg {
+    width: 24px;
+    height: 24px;
+}
+@keyframes bounceDown {
+    0%, 20%, 50%, 80%, 100% { transform: translate(-50%, 0); }
+    40% { transform: translate(-50%, -10px); }
+    60% { transform: translate(-50%, -5px); }
 }
