@@ -6,6 +6,25 @@
     --accent-1: #6E56FF;
     --accent-2: #FF56A5;
     --font-main: 'Outfit', sans-serif;
+    --nav-bg: rgba(5, 5, 5, 0.8);
+    --border-color: rgba(255, 255, 255, 0.05);
+    --border-color-hover: rgba(255, 255, 255, 0.1);
+    --btn-secondary-border: rgba(255, 255, 255, 0.2);
+    --mobile-menu-bg: rgba(17, 17, 17, 0.98);
+}
+
+[data-theme="light"] {
+    --bg-color: #f9f9f9;
+    --surface-color: #ffffff;
+    --text-primary: #111111;
+    --text-secondary: #555555;
+    --accent-1: #6E56FF;
+    --accent-2: #FF56A5;
+    --nav-bg: rgba(255, 255, 255, 0.85);
+    --border-color: rgba(0, 0, 0, 0.08);
+    --border-color-hover: rgba(0, 0, 0, 0.15);
+    --btn-secondary-border: rgba(0, 0, 0, 0.2);
+    --mobile-menu-bg: rgba(255, 255, 255, 0.98);
 }
 * {
     margin: 0;
@@ -47,10 +66,10 @@ body {
     width: 100%;
     top: 0;
     z-index: 1000;
-    background: rgba(5, 5, 5, 0.8);
+    background: var(--nav-bg);
     -webkit-backdrop-filter: blur(10px);
     backdrop-filter: blur(10px);
-    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    border-bottom: 1px solid var(--border-color);
 }
 .logo {
     font-size: 1.8rem;
@@ -74,6 +93,23 @@ body {
 .nav-links a:hover {
     color: var(--text-primary);
 }
+/* Theme Toggle */
+.theme-btn {
+    background: none;
+    border: none;
+    color: var(--text-primary);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8px;
+    border-radius: 50%;
+    transition: background 0.3s ease, color 0.3s ease;
+}
+.theme-btn:hover {
+    background: var(--border-color);
+}
+
 /* Hero Section */
 .hero {
     height: 100vh;
@@ -117,7 +153,7 @@ body {
     box-shadow: 0 10px 20px rgba(110, 86, 255, 0.3);
 }
 .secondary-btn {
-    border: 1px solid rgba(255, 255, 255, 0.2);
+    border: 1px solid var(--btn-secondary-border);
     color: var(--text-primary);
 }
 .secondary-btn:hover {
@@ -166,7 +202,7 @@ body {
     background: var(--surface-color);
     padding: 4rem;
     border-radius: 20px;
-    border: 1px solid rgba(255, 255, 255, 0.05);
+    border: 1px solid var(--border-color);
     text-align: center;
     max-width: 900px;
     margin: 0 auto;
@@ -183,14 +219,14 @@ body {
     gap: 1rem;
 }
 .skill-tag {
-    background: rgba(255, 255, 255, 0.05);
+    background: var(--border-color);
     padding: 10px 20px;
     border-radius: 20px;
-    border: 1px solid rgba(255, 255, 255, 0.1);
+    border: 1px solid var(--border-color-hover);
     transition: background 0.3s ease;
 }
 .skill-tag:hover {
-    background: rgba(255, 255, 255, 0.1);
+    background: var(--border-color-hover);
 }
 /* Projects Section */
 .project-grid {
@@ -202,7 +238,7 @@ body {
     background: var(--surface-color);
     border-radius: 20px;
     overflow: hidden;
-    border: 1px solid rgba(255, 255, 255, 0.05);
+    border: 1px solid var(--border-color);
     transition: transform 0.3s ease;
 }
 .project-card:hover {
@@ -233,7 +269,7 @@ body {
 /* Contact Section */
 .contact-box {
     background: linear-gradient(135deg, rgba(110, 86, 255, 0.1), rgba(255, 86, 165, 0.1));
-    border: 1px solid rgba(255, 255, 255, 0.1);
+    border: 1px solid var(--border-color-hover);
     border-radius: 20px;
     padding: 5rem 2rem;
     text-align: center;
@@ -249,12 +285,11 @@ body {
     margin-bottom: 2.5rem;
     font-size: 1.2rem;
 }
-/* Footer */
 footer {
     text-align: center;
     padding: 2rem;
     color: var(--text-secondary);
-    border-top: 1px solid rgba(255, 255, 255, 0.05);
+    border-top: 1px solid var(--border-color);
 }
 /* Animations */
 .fade-in {
@@ -306,7 +341,7 @@ footer {
         top: 0;
         gap: 0;
         flex-direction: column;
-        background-color: rgba(17, 17, 17, 0.98);
+        background-color: var(--mobile-menu-bg);
         -webkit-backdrop-filter: blur(15px);
         backdrop-filter: blur(15px);
         width: 100%;
