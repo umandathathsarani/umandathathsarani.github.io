@@ -29,5 +29,13 @@ Since this project uses pure HTML, CSS, and JavaScript, no complex build tools o
 3. Open `index.html` directly in your favorite web browser.
    * *Tip: For the best development experience, open the folder in VS Code and use the **Live Server** extension.*
 
+## 📫 Contact Me
+Feel free to reach out for collaborations or just a friendly chat!
+* **Email:** [binuuma3218@gmail.com](mailto:binuuma3218@gmail.com) or [umathathsarani2003@gmail.com](mailto:umathathsarani2003@gmail.com)
+* **Telegram:** [@b_uma_t](https://t.me/b_uma_t)
+* **LinkedIn:** [umandathathsarani](https://linkedin.com/in/umandathathsarani)
+* **Instagram:** [@umandathathsarani](https://instagram.com/umandathathsarani)
+* **WhatsApp:** [Message Me](https://wa.me/94700000000)
+
 ## ⚖️ License
 © 2026 Binuri Umanda Thathsarani. All Rights Reserved.
