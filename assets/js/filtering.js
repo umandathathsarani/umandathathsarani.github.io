@@ -11,8 +11,8 @@ document.addEventListener("DOMContentLoaded", () => {
             const filterValue = btn.getAttribute('data-filter');
 
             projectCards.forEach(card => {
-                // Check if card has the right category (we need to make sure project cards have data-category if not already)
-                if (filterValue === 'all' || card.getAttribute('data-category') === filterValue) {
+                const category = card.getAttribute('data-category');
+                if (filterValue === 'all' || (category && category.split(' ').includes(filterValue))) {
                     card.classList.remove('hide');
                 } else {
                     card.classList.add('hide');
